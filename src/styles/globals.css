@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* globals.css */
+  #smooth-wrapper {
+    overflow: hidden;
+  }
+
+  #smooth-content {
+    position: relative;
+  }
+
+  .bg-body-home {
+    background: url(/assets/images/home-background.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .bg-industry-home {
+    background: url(/assets/images/Industries-bg.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .bg-solutions-home {
+    background: url(/assets/images/Solutions-bg.svg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: top;
+  }
+
+  .hero-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/images/backgroundhome.svg);
+    background-position: bottom;
+  }
+  .glass-bg {
+    backdrop-filter: blur(16px) saturate(163%);
+    -webkit-backdrop-filter: blur(16px) saturate(163%);
+    background-color: rgba(255, 255, 255, 0.59);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    /* padding: 30px; */
+    /* box-shadow: 8px 15px 80px rgba(14, 72, 80, 0.2); */
+    position: relative;
+    z-index: 10;
+  }
+  .datapoint-video {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  .tab-shadow {
+    box-shadow: 4px 4px 85px 0px rgba(24, 115, 172, 0.29);
+  }
+  .industry-section {
+    background: url(/assets/images/industry-section.png);
+    background-size: cover;
+    padding-bottom: 100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 100px;
+  }
+  .industry-card {
+    background: #fff;
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 8px 15px 80px rgba(14, 72, 119, 0.2);
+  }
+  .counter-border:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, #37c1f1, #37bdb0);
+  }
+  .counter-border:nth-child(3 )::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, #37c1f1, #37bdb0);
+  }
+  .footer-bg {
+    background: url(/assets/images/footer-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .testimonial-slider {
+    max-width: 80%;
+  }
+  .testimonial-content {
+    box-shadow: 8px 15px 80px rgba(14, 72, 119, 0.2);
+  }
+  .testimonial-writings {
+    background: linear-gradient(84deg, #115991 2.94%, #1873ac 96.29%);
+  }
+  .boxes-custom-background{
+    background: url(/assets/images/background-nosie.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(0.9);
+  }
+  .custom-solutions-mask{
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), black, rgba(0, 0, 0, 0.7));
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), black, rgba(0, 0, 0, 0.7));
+  }
+
+  @media only screen and (max-width: 768px) {
+    .industry-section {
+      background: #115991;
+    }
+  }
+  @media only screen and (max-width: 668px) {
+    .counter-border::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #37c1f1, #37bdb0);
+    }
+    .footer-bg {
+      background-color: #115991;
+    }
+    .testimonial-slider {
+      max-width: 100%;
+    }
+ 
+  }
+  .industryCardAfter::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  .logo-ticker-image{
+    @apply h-16 w-auto
+  }
+  .solution-card:first-child {
+    @apply border-r-2 border-[#115991]/20;
+  }
+  
+  .solution-card:nth-child(2) {
+    @apply border-r-2 border-[#115991]/20;
+  }
+  .counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-lg text-white border border-white px-5 py-2 rounded-lg font-bold transition-all duration-300 ease-in-out;
+  }
+  .btn:hover {
+    @apply border-[#37C1F1]  scale-105;
+  }
+  .btn-primary {
+    @apply bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] border-0 transform transition-transform duration-300 ease-in-out;
+  }
+  .btn-primary:hover {
+    @apply scale-105 bg-gradient-to-l from-[#37BDB0] to-[#37C1F1];
+  }
+  .btn-border {
+    @apply border  border-[#115991] text-[#115991] transition-colors duration-300 ease-in-out;
+  }
+  .btn-border:hover {
+    @apply border-[#37C1F1] text-[#37C1F1] scale-105;
+  }
+  .text-primary {
+    @apply text-center text-2xl md:text-4xl lg:text-4xl font-bold text-[#115991];
+  }
+  .text-card {
+    @apply text-xl font-bold text-[#115991];
+  }
+}
