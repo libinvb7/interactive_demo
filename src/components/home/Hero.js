@@ -1,6 +1,4 @@
 import Image from "next/image";
-import React from "react";
-import bannerSlide from "/public/assets/images/bannerslide.png";
 
 const Hero = () => {
   return (
@@ -27,9 +25,9 @@ const Hero = () => {
         </div>
 
         <div className="pt-10 lg:pt-0 ">
-          <Image
+          <Image  width={1000} height={1000}
             className="lg:absolute md:px-3 lg:px-0 md:top-40 2xl:-right-20 lg:top-36 z-40 lg:[500px]"
-            src={bannerSlide}
+            src="/assets/images/bannerslide.png"
             alt="Balanced Scorecard Software Banner"
             priority 
           />

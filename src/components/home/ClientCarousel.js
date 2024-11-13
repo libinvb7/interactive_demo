@@ -1,19 +1,13 @@
 "use client";
 import Image from "next/image";
-import hitachi from "/public/assets/clients/hitachi.png";
-import kineco from "/public/assets/clients/kineco.png";
-import pci from "/public/assets/clients/pci.png";
-import philips from "/public/assets/clients/philips.png";
-import schindler from "/public/assets/clients/schindler.png";
-import trp from "/public/assets/clients/trp.png";
 import {motion} from 'framer-motion'
 const clientImages = [
-  { id: 1, imageUrl: hitachi,  logoName: "hitachi" },
-  { id: 2, imageUrl: kineco,  logoName: "kineco" },
-  { id: 3, imageUrl: pci,  logoName: "pci" },
-  { id: 4, imageUrl: philips,  logoName: "philips" },
-  { id: 5, imageUrl: schindler,  logoName: "schindler" },
-  { id: 6, imageUrl: trp,  logoName: "trp" },
+  { id: 1, logoName: "hitachi",  imageUrl: "/assets/clients/hitachi.png" },
+  { id: 2, logoName: "kineco",  imageUrl: "/assets/clients/kineco.png" },
+  { id: 3, logoName: "pci",  imageUrl: "/assets/clients/pci.png" },
+  { id: 4, logoName: "philips",  imageUrl: "/assets/clients/philips.png" },
+  { id: 5, logoName: "schindler",  imageUrl: "/assets/clients/schindler.png" },
+  { id: 6, logoName: "trp",  imageUrl: "/assets/clients/trp.png" },
 ];
 
 // Duplicate the images for seamless looping
@@ -46,7 +40,7 @@ export const ClientCarousel = () => {
               key={`${client.id}-${index}`}
               src={client.imageUrl}
               alt={client.logoName}
-              className="logo-ticker-image"
+              className="logo-ticker-image" width={150} height={100}
             />
           ))}
            {loopingClientImages.map((client, index) => (
@@ -54,7 +48,7 @@ export const ClientCarousel = () => {
               key={`${client.id}-${index}`}
               src={client.imageUrl}
               alt={client.logoName}
-              className="logo-ticker-image"
+              className="logo-ticker-image"  width={150} height={100}
             />
           ))}
           </motion.div>

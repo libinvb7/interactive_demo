@@ -1,11 +1,3 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import ExecuteStrategies from "/public/assets/images/manufacturing/execute-strategies.png";
-import strategicplan from "/public/assets/images/manufacturing/strategic-plan.png";
-import datainsights from "/public/assets/images/manufacturing/data-insights.png";
-import productionandsales from "/public/assets/images/manufacturing/productionandsales.png";
-import customer from "/public/assets/images/manufacturing/customer.png";
-import digitalreports from "/public/assets/images/manufacturing/digital-reports.png";
 import Image from "next/image";
 
 const automotiveData = {
@@ -13,7 +5,7 @@ const automotiveData = {
         {
             title: 'Automotive Balanced Scorecard Software',
             HighlightTitle: ' Elevate your Performance and Strategy   ',
-            Image: bannerSlide,
+            Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
             desc:"Streamline every stage of the automotive lifecycle—from design and development to manufacturing, repair, and modification—with our comprehensive Automotive Balanced Scorecard Software. Track, manage, and optimise KPIs to ensure efficiency and strategic alignment across your entire operation.  "
           
            
@@ -30,8 +22,8 @@ const automotiveData = {
             "Automotive KPI tracker dashboards consolidate critical data into one visual platform, providing real-time insights into production, quality control, and repair timelines. This allows teams to focus on what matters most and make informed decisions faster. ",
           content: (
               <Image
-              src={customizationImage}
-              width={1000}
+              src="/assets/images/customization-img.png"
+              width={1000}  height={200}
               className="w-full"
               alt="linear board demo"
             />
@@ -43,8 +35,8 @@ const automotiveData = {
             "Bridge the misalignment between the high-level strategic goals and day-to-day tasks. Balanced Scorecard software helps ensure that every team understands how their work contributes to broader objectives, increasing accountability and focus across the organisation. ",
           content: (
               <Image
-              src={customizationImage}
-              width={1000}
+              src="/assets/images/manufacturing/execute-strategies.png"
+              width={1000}  height={200}
               className="w-full"
               alt="linear board demo"
             />
@@ -56,8 +48,8 @@ const automotiveData = {
             "Don't comprise your high production qualities for output optimisations.  Automotive KPI Scorecards offers a detailed view of key metrics like production cycle times or quality defects, enabling teams to quickly identify bottlenecks and take corrective actions. ",
           content: (
               <Image
-              src={customizationImage}
-              width={1000}
+              src="/assets/images/manufacturing/strategic-plan.png"
+              width={1000}  height={200}
               className="w-full"
               alt="linear board demo"
             />
@@ -69,8 +61,8 @@ const automotiveData = {
             "Balanced Scorecard Automotive Operational Efficiency Tools are designed to streamline processes across design, development, and repair. By identifying inefficiencies and areas for improvement, these tools help businesses reduce waste, optimise workflows, and drive continuous improvement.",
           content: (
               <Image
-              src={customizationImage}
-              width={1000}
+              src="/assets/images/customization-img.png"
+              width={1000}  height={200}
               className="w-full"
               alt="linear board demo"
             />
@@ -112,19 +104,19 @@ const automotiveData = {
         },
         {
           title: "Increase Efficiency ",
-          icon: datainsights,
+          icon: "/assets/images/manufacturing/data-insights.png",
           content:
             "Maximise efficiency of all processes within the organisation. Align organisational goals from top to bottom level. Monitor how well teams are performing, to achieve the set organisational goals. ",
         },
         {
           title: "Measure Performance ",
-          icon: productionandsales,
+          icon: "/assets/images/manufacturing/productionandsales.png",
           content:
             "Measure and analyse business performance using financial and non-financial data. By measuring performance, the organisation will realise where they are now and what needs to be done to achieve the long or short term goals. ",
         },
         {
           title: " Dynamic Reports  ",
-          icon: customer,
+          icon: "/assets/images/manufacturing/customer.png",
           content:
             "Why wait for manual reports, when you have automated reports at hand. Just a click to download your reports. Compare and contrast multiple reports and implement actions for further improvement. ",
         },

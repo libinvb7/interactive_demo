@@ -1,11 +1,3 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import ExecuteStrategies from "/public/assets/images/manufacturing/execute-strategies.png";
-import strategicplan from "/public/assets/images/manufacturing/strategic-plan.png";
-import datainsights from "/public/assets/images/manufacturing/data-insights.png";
-import productionandsales from "/public/assets/images/manufacturing/productionandsales.png";
-import customer from "/public/assets/images/manufacturing/customer.png";
-import digitalreports from "/public/assets/images/manufacturing/digital-reports.png";
 import Image from "next/image";
 
 const bankData = {
@@ -13,7 +5,7 @@ const bankData = {
         {
             title: 'Transform your Banking Operations with ',
             HighlightTitle: 'a Strategic Balanced Scorecard',
-            Image: bannerSlide,
+            Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
             desc:"Leverage our comprehensive Banking Balanced Scorecard software with advanced KPI dashboards to enhance operational efficiency, monitor Key Performance Indicators, and improve financial management for sustainable growth in the banking sector."
           
            
@@ -30,8 +22,8 @@ const bankData = {
             "Balanced Scorecard serves as a crucial tool for banks to define and communicate their vision, mission, and strategic objectives. It ensures alignment across all levels of the organisation, driving cohesive efforts toward common goals.",
           content: (
               <Image
-              src={customizationImage}
-              width={1000}
+              src="/assets/images/customization-img.png"
+              width={1000}  height={200}
               className="w-full"
               alt="linear board demo"
             />
@@ -43,8 +35,8 @@ const bankData = {
             "The framework enhances customer relationship management by measuring key aspects such as customer satisfaction, loyalty, and retention. This focus ultimately improves service delivery and strengthens client relationships.",
           content: (
               <Image
-              src={customizationImage}
-              width={1000}
+              src="/assets/images/customization-img.png"
+              width={1000}  height={200}
               className="w-full"
               alt="linear board demo"
             />
@@ -56,8 +48,8 @@ const bankData = {
             "This tool assesses financial risks and ensures compliance with regulations, allowing banks to maintain stability and proactively mitigate potential threats.",
           content: (
               <Image
-              src={customizationImage}
-              width={1000}
+              src="/assets/images/customization-img.png"
+              width={1000}  height={200}
               className="w-full"
               alt="linear board demo"
             />
@@ -69,8 +61,8 @@ const bankData = {
             "By measuring key metrics such as Return on Assets (ROA) and Net Interest Margin (NIM), the Balanced Scorecard helps banks ensure long-term financial health and growth.",
           content: (
               <Image
-              src={customizationImage}
-              width={1000}
+              src="/assets/images/customization-img.png"
+              width={1000}  height={200}
               className="w-full"
               alt="linear board demo"
             />
@@ -100,25 +92,25 @@ const bankData = {
       cardData:[
         {
           title: "Consistent Decision Making",
-          icon: ExecuteStrategies,
+          icon: "/assets/images/manufacturing/execute-strategies.png",
           content:
             "Make the right decisions, every single time. Easily analyse perspectives and their Key Performance Indicators to make the correct decisions. Let everyone be well informed about the decisions that are being made.",
         },
         {
           title: "Easy Collaboration of Data",
-          icon: strategicplan,
+          icon: "/assets/images/manufacturing/strategic-plan.png",
           content:
             "Collaborate data from different departments with much ease. Consolidated view of departmental data helps top level management make better decisions. Take data-driven decisions and make strategic planning and management is easier.",
         },
         {
           title: "Monitor and Enhance Performance",
-          icon: datainsights,
+          icon:  "/assets/images/manufacturing/data-insights.png",
           content:
             "Monitor and enhance business performance using financial and non-financial data. By measuring performance, the organisation will realise where they are now and what needs to be done to achieve the long or short term goals.",
         },
         {
           title: "Auto-Generated Reports",
-          icon: productionandsales,
+          icon: "/assets/images/manufacturing/productionandsales.png",
           content:
             "Download digital reports and summaries in a click! Gather meaningful insights, to improve business performance. Precise and detailed reports to align actions with organisational strategy goals.",
         },       

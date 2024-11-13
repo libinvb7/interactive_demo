@@ -1,16 +1,9 @@
 import Card from "./Card"
-import Manufacturing from "/public/assets/images/icons/manufactuing-icon.png";
-import ServiceBased from "/public/assets/images/icons/service-based.png";
-import Automotive  from "/public/assets/images/icons/automotive.png";
-import Healthcare from "/public/assets/images/icons/healthCareicon.png";
-import Energy from "/public/assets/images/icons/energy.png";
-import Electronics from "/public/assets/images/icons/electronic.png";
-
 
 const cardData=[
   {
       "title": "Manufacturing Balanced Scorecard",
-      "icon":Manufacturing,
+      "icon":"/assets/images/icons/manufactuing-icon.png",
       "content": [
           "Improve Efficiency in Production",
           "Strategic Goal Alignment",
@@ -21,7 +14,7 @@ const cardData=[
   },
   {
       "title": "Service based industries Balanced Scorecard",
-      "icon":ServiceBased,
+      "icon":"/assets/images/icons/service-based.png",
       "content": [
           "Ensure customer satisfaction",
           "Resource optimisation",
@@ -32,7 +25,7 @@ const cardData=[
   },
   {
       "title": "Automotive Balanced Scorecard",
-      "icon":Automotive,
+      "icon":"/assets/images/icons/automotive.png",
       "content": [
           "Optimise supply chains",
           "Boost innovation",
@@ -43,7 +36,7 @@ const cardData=[
   },
   {
       "title": "Healthcare Balanced Scorecard",
-      "icon":Healthcare,
+      "icon":"/assets/images/icons/healthCareicon.png",
       "content": [
           "Enhance patient care",
           "Optimise resource utilisation",
@@ -54,7 +47,7 @@ const cardData=[
   },
   {
       "title": "Energy sector Balanced Scorecard",
-      "icon":Energy,
+      "icon": "/assets/images/icons/energy.png",
       "content": [
           "Optimise energy production",
           "Sustainability goals",
@@ -65,7 +58,7 @@ const cardData=[
   },
   {
       "title": "Electronics industry Balanced Scorecard",
-      "icon":Electronics,
+      "icon":"/assets/images/icons/electronic.png",
       "content": [
           "Accelerate innovation",
           "Optimise production",

@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const sqdcmData = {
   bannerData: {
     title: "SQDCM Visual Management Boards ",
     HighlightTitle: "for Continuous Improvement ",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "As a visual management board, SQDCM aids in monitoring and enhancing manufacturing performance. The board provides a visual representation of performance metrics across five key areas: Safety, Quality, Delivery, Cost, and Morale. A SQDCM board enables teams to identify issues, track progress, and implement corrective actions swiftly. SQDCM boards promote transparency, accountability, and continuous improvement across all aspects of operations. ",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const sqdcmData = {
   cardData: [
     {
       title: "Operational Excellence ",
-      icon: visualmanagement,
+      icon:  "/assets/images/icons/visual-management.png",
       content:
         "Improve safety, quality, and delivery performance simultaneously to ensure seamless operations and meet customer demands efficiently.  ",
     },
     {
       title: "Cost Efficiency  ",
-      icon: realtimetracking,
+      icon: "/assets/images/icons/real-time-tracking.png",
       content:
         " By monitoring safety and quality metrics, reduce operational costs associated with defects, delays, and workplace incidents. ",
     },
     {
       title: "Employee Engagement ",
-      icon: importantmetrics,
+      icon: "/assets/images/icons/important-metrics.png",
       content:
         "Boost morale by creating a safer work environment, reducing stress caused by defects or delays, and fostering a culture of continuous improvement.",
     },
@@ -48,8 +43,8 @@ const sqdcmData = {
       description:
         " Monitor safety metrics to reduce workplace incidents and create a safer environment.",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -61,8 +56,8 @@ const sqdcmData = {
       description:
         "Maintain high product and service quality to enhance customer satisfaction.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -73,8 +68,8 @@ const sqdcmData = {
       title: "Delivery",
       description: "Track delivery performance and streamline processes to ensure timely customer fulfilment.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -86,8 +81,8 @@ const sqdcmData = {
       description:
         "Control operational expenses and optimise processes for better profitability.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -99,8 +94,8 @@ const sqdcmData = {
       description:
         "Monitor employee engagement and morale to create a supportive and productive workplace culture. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"

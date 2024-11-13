@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const sheqcpldcpsData = {
   bannerData: {
     title: "Optimise Operations with",
     HighlightTitle: "SHEQCPLDCPS Boards ",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Integrate Safety, Health and Environment (SHE), Quality, Customer, Production, Lean, Delivery, Cost, People and Site Action to drive performance and ensure sustainable growth. ",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const sheqcpldcpsData = {
   cardData: [
     {
       title: "Safety, Health, and Environment (SHE)  ",
-      icon: visualmanagement,
+      icon: "/assets/images/icons/visual-management.png",
       content:
         "Track and promote safety, health, and environmental standards across your organisation.  ",
     },
     {
       title: "Production and Delivery ",
-      icon: realtimetracking,
+      icon: "/assets/images/icons/real-time-tracking.png",
       content:
         " Enhance production efficiency and delivery timelines to ensure customer satisfaction. ",
     },
     {
       title: "Lean and Cost Management ",
-      icon: importantmetrics,
+      icon: "/assets/images/icons/important-metrics.png",
       content:
         "Implement lean principles to reduce waste, optimise costs, and improve profitability. ",
     },
@@ -48,8 +43,8 @@ const sheqcpldcpsData = {
       description:
         " Ensure a safe and compliant workplace while meeting environmental sustainability goals. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -61,8 +56,8 @@ const sheqcpldcpsData = {
       description:
         "Maintain high-quality standards to meet customer expectations and improve product consistency.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -73,8 +68,8 @@ const sheqcpldcpsData = {
       title: "Customer",
       description: "Drive customer satisfaction through improved delivery times and product quality.   ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -86,8 +81,8 @@ const sheqcpldcpsData = {
       description:
         " Streamline production processes for better efficiency and reduced waste. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -99,8 +94,8 @@ const sheqcpldcpsData = {
       description:
         "Adopt lean methodologies to eliminate waste and drive cost efficiency.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -112,8 +107,8 @@ const sheqcpldcpsData = {
       description:
         " Track delivery performance to ensure on-time shipments and reduce delays.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -125,8 +120,8 @@ const sheqcpldcpsData = {
       description:
         "Manage operational costs effectively to improve financial performance. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -138,8 +133,8 @@ const sheqcpldcpsData = {
       description:
         "  Engage employees and boost productivity through focused performance management.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -151,8 +146,8 @@ const sheqcpldcpsData = {
       description:
         "  Implement site-specific actions to address localised challenges and drive operational improvements.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"

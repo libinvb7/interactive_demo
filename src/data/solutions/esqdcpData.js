@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const esqdcpData = {
   bannerData: {
     title: " ESQDCP Board:",
     HighlightTitle: "Optimising Performance with an Environmental Focus ",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "rack and improve performance across Environment, Safety, Quality, Delivery, Cost, and People with a powerful visual management tool. ",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const esqdcpData = {
   cardData: [
     {
       title: "Operational Efficiency",
-      icon: visualmanagement,
+      icon: "/assets/images/icons/visual-management.png",
       content:
         "The ESQDCP Board enhances decision-making by tracking key metrics across Environment, Safety, Quality, Delivery, Cost, and People. ",
     },
     {
       title: "Sustainability and Safety ",
-      icon: realtimetracking,
+      icon: "/assets/images/icons/real-time-tracking.png",
       content:
         "Track environmental impact and workplace safety to ensure compliance and promote sustainable practices.",
     },
     {
       title: "Cost and Workforce Engagement ",
-      icon: importantmetrics,
+      icon: "/assets/images/icons/important-metrics.png",
       content:
         "Control operational costs and boost employee productivity by aligning team efforts with organisational goals. ",
     },
@@ -48,8 +43,8 @@ const esqdcpData = {
       description:
         "Measure and track environmental impact and sustainability efforts. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -61,8 +56,8 @@ const esqdcpData = {
       description:
         "Track safety incidents and enhance workplace safety protocols. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -73,8 +68,8 @@ const esqdcpData = {
       title: "Quality",
       description: "Improve product quality and customer satisfaction through real-time monitoring. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -86,8 +81,8 @@ const esqdcpData = {
       description:
         "Measure on-time delivery performance to enhance supply chain efficiency. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -99,8 +94,8 @@ const esqdcpData = {
       description:
         "Evaluate workforce productivity and engagement. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -112,8 +107,8 @@ const esqdcpData = {
       description:
         "Boost workforce productivity and engagement through focused tracking. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"

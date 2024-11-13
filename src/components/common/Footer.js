@@ -1,20 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import Datapoint from "/public/assets/images/Datapoint_logo.png";
-import lts from "/public/assets/images/lts-logo.png";
-import one from "/public/assets/product-logo/one.png";
-import two from "/public/assets/product-logo/two.png";
-import three from "/public/assets/product-logo/three.png";
-import four from "/public/assets/product-logo/four.png";
-import five from "/public/assets/product-logo/five.png";
-import six from "/public/assets/product-logo/six.png";
-import seven from "/public/assets/product-logo/seven.png";
-import eight from "/public/assets/product-logo/eight.png";
-import backingbritain from "/public/assets/partner-logo/backingbritain.jpg";
-import brainboxes from "/public/assets/partner-logo/brainboxes.jpg";
-import madeinthemidlands from "/public/assets/partner-logo/madeinthemidlands.jpg";
-import iso from "/public/assets/partner-logo/iso-logo.png";
 import { MdMail } from "react-icons/md";
 import { FaPhoneAlt,FaFacebook,FaYoutube ,FaLinkedin,FaInstagram  } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -22,39 +8,39 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const productLogs = [
   {
-    logo: one,
+    logo: "/assets/product-logo/one.png",
   },
   {
-    logo: two,
+    logo: "/assets/product-logo/two.png",
   },
   {
-    logo: three,
+    logo: "/assets/product-logo/three.png",
   },
   {
-    logo: four,
+    logo: "/assets/product-logo/four.png",
   },
   {
-    logo: five,
+    logo: "/assets/product-logo/five.png",
   },
   {
-    logo: six,
+    logo: "/assets/product-logo/six.png",
   },
   {
-    logo: seven,
+    logo: "/assets/product-logo/seven.png",
   },
   {
-    logo: eight,
+    logo: "/assets/product-logo/eight.png",
   },
 ];
 const partnerLogo = [
   {
-    logo: backingbritain,
+    logo: "/assets/partner-logo/backingbritain.jpg",
   },
   {
-    logo: brainboxes,
+    logo: "/assets/partner-logo/brainboxes.jpg",
   },
   {
-    logo: madeinthemidlands,
+    logo: "/assets/partner-logo/madeinthemidlands.jpg",
   },
 ];
 
@@ -67,7 +53,7 @@ const Footer = () => {
             <div className="py-2">
               <Link href="/">
                 <Image
-                  src={Datapoint}
+                  src="/assets/images/Datapoint_logo.png"
                   className="bg-white rounded-lg p-2"
                   alt="data point logo"
                   width={150}
@@ -76,7 +62,7 @@ const Footer = () => {
               </Link>
               <Link href="/">
                 <Image
-                  src={lts}
+                  src="/assets/images/lts-logo.png"
                   className="pt-3"
                   alt="data point logo"
                   width={150}
@@ -283,7 +269,7 @@ const Footer = () => {
           key={index}
           src={logo.logo}
           alt="product logo"
-          width={100}
+          width={100}  height={200}
           className="bg-white rounded-lg"
         />
       ))}
@@ -300,7 +286,7 @@ const Footer = () => {
                       key={index}
                         src={logo.logo}
                         alt="product logo"
-                        width={100}
+                        width={100}  height={100}
                         className="bg-white rounded-lg"
                       />
                     ))}
@@ -311,7 +297,7 @@ const Footer = () => {
                 <div className="md:py-2 pt-5 md:px-5">
                   <h3 className="text-white font-bold ">Our Partners</h3>
                   <div className="flex gap-2 mt-3 flex-wrap">
-                    <Image src={iso} alt="product logo" width={200} />
+                    <Image src="/assets/partner-logo/iso-logo.png" alt="product logo" width={200}  height={200} />
                   </div>
                 </div>
               </div>

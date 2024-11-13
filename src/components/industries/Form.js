@@ -1,10 +1,6 @@
 import Image from "next/image";
-import formImg from "/public/assets/images/form-img.png";
 import { BsFillRocketTakeoffFill } from "react-icons/bs";
-import { IoIosMail } from "react-icons/io";
-import Message from "/public/assets/images/Message.png";
-import Profile from "/public/assets/images/Profile.png";
-import chat from "/public/assets/images/ChatFormnew.png";
+
 
 const FormIndustry = ({title, desc}) => {
   return (
@@ -19,7 +15,7 @@ const FormIndustry = ({title, desc}) => {
                 </h2>
                 <p className="text-xl text-white pb-4">
                  {desc || ""}</p>
-                <Image src={formImg} />
+                <Image src="/assets/images/form-img.png"  width={150}  height={200} alt="product logo"/>
               </div>
             </div>
             <div className="w-full lg:p-14">
@@ -41,7 +37,7 @@ const FormIndustry = ({title, desc}) => {
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                        <Image src={Message} width={20} />
+                        <Image src="/assets/images/Message.png" width={20}  height={200} alt="product logo"/>
                       </div>
                       <input
                         type="text"
@@ -62,7 +58,7 @@ const FormIndustry = ({title, desc}) => {
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                        <Image src={Profile} width={15} />
+                        <Image src="/assets/images/Profile.png" width={15} height={200} alt="product logo"/>
                       </div>
                       <input
                         type="text"
@@ -83,7 +79,7 @@ const FormIndustry = ({title, desc}) => {
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                        <Image src={Message} width={20} />
+                        <Image src="/assets/images/ChatFormnew.png" width={20}  height={200} alt="product logo"/>
                       </div>
                       <input
                         type="text"
@@ -105,7 +101,7 @@ const FormIndustry = ({title, desc}) => {
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                        <Image src={Message} width={20} />
+                        <Image src="/assets/images/ChatFormnew.png" width={20}  height={200} alt="product logo"/>
                       </div>
                       <input
                         type="text"
@@ -126,7 +122,7 @@ const FormIndustry = ({title, desc}) => {
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 flex items-start top-[10px] ps-3.5 pointer-events-none">
-                        <Image src={chat} width={20} />
+                        <Image src="/assets/images/ChatFormnew.png" width={20}  height={200} alt="product logo"/>
                       </div>
                       <textarea
   id="email-address-icon"

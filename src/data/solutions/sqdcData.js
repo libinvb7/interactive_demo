@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const sqdcData = {
   bannerData: {
     title: "  SQDC Lean Visual Management Boards ",
     HighlightTitle: "",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Plan your strategic development with Digital SQDC visual management boards. Track your daily management process by measuring how the process is performing against Safety, Quality, Delivery and Cost.  ",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const sqdcData = {
   cardData: [
     {
       title: "Operational Efficiency",
-      icon: visualmanagement,
+      icon: "/assets/images/icons/visual-management.png",
       content:
         "Enhance overall performance by tracking and improving key metrics, ensuring streamlined processes. ",
     },
     {
       title: "Cost Control",
-      icon: realtimetracking,
+      icon:  "/assets/images/icons/real-time-tracking.png",
       content:
         "Monitor and reduce costs through consistent oversight, leading to more profitable operations.  ",
     },
     {
       title: "Quality and Delivery Improvement",
-      icon: importantmetrics,
+      icon: "/assets/images/icons/important-metrics.png",
       content:
         "Maintain high product quality and improve delivery times to meet customer expectations efficiently.  ",
     },
@@ -49,8 +44,8 @@ const sqdcData = {
       description:
         "Track workplace incidents and ensure a secure environment for all employees. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -62,8 +57,8 @@ const sqdcData = {
       description:
         " Improve product quality and minimise defects to maintain high standards. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -75,8 +70,8 @@ const sqdcData = {
       description:
         "Increase on-time delivery rates to meet customer expectations consistently. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -88,8 +83,8 @@ const sqdcData = {
       description:
         "Control operational expenses and reduce waste to optimise profitability. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"

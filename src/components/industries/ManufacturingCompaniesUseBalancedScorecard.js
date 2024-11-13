@@ -1,9 +1,3 @@
-import ExecuteStrategies from "/public/assets/images/manufacturing/execute-strategies.png";
-import strategicplan from "/public/assets/images/manufacturing/strategic-plan.png";
-import datainsights from "/public/assets/images/manufacturing/data-insights.png";
-import productionandsales from "/public/assets/images/manufacturing/productionandsales.png";
-import customer from "/public/assets/images/manufacturing/customer.png";
-import digitalreports from "/public/assets/images/manufacturing/digital-reports.png";
 import IndustryCard from "@/components/industries/IndustryCard";
 
 

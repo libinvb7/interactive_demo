@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const fcilData = {
   bannerData: {
     title: "FCIL Balanced Scorecard ",
     HighlightTitle: " A Complete Framework for Operational Excellence ",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Drive business success by balancing financial health, customer satisfaction, process efficiency, and growth.  ",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const fcilData = {
   cardData: [
     {
       title: "Optimised Business Performance",
-      icon: visualmanagement,
+      icon: "/assets/images/icons/visual-management.png",
       content:
         " The FCIL framework enhances financial oversight, customer satisfaction, and internal process efficiency. ",
     },
     {
       title: "Customer-Centric Approach",
-      icon: realtimetracking,
+      icon: "/assets/images/icons/real-time-tracking.png",
       content:
         "FCIL helps organisations focus on improving customer satisfaction and retention. ",
     },
     {
       title: "Continuous Improvement",
-      icon: importantmetrics,
+      icon: "/assets/images/icons/important-metrics.png",
       content:
         "FCIL promotes ongoing innovation and workforce development to drive business growth. ",
     },
@@ -48,8 +43,8 @@ const fcilData = {
       description:
         "Keep track of revenue, costs, and profitability to make strategic financial decisions. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -61,8 +56,8 @@ const fcilData = {
       description:
         "Enhance process efficiency to reduce waste and improve output. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -73,8 +68,8 @@ const fcilData = {
       title: "Learning & Growth",
       description: "Support employee development and innovation for sustained business growth. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"

@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import Datapoint from '/public/assets/images/Datapoint_logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react';
@@ -12,7 +11,7 @@ const NavbarTwo = () => {
         <div className='container mx-auto '>
         <div className='flex justify-between items-center '>
             <div>
-            <Link href="/"><Image src={Datapoint} className='bg-white rounded-lg p-2' alt="data point logo" width={150} height={50}/></Link>
+            <Link href="/"><Image src="/assets/images/Datapoint_logo.png" className='bg-white rounded-lg p-2' alt="data point logo" width={150} height={50}/></Link>
                 
             </div>
             <div className="flex justify-between items-center gap-10">

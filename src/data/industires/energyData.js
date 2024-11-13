@@ -1,11 +1,3 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import ExecuteStrategies from "/public/assets/images/manufacturing/execute-strategies.png";
-import strategicplan from "/public/assets/images/manufacturing/strategic-plan.png";
-import datainsights from "/public/assets/images/manufacturing/data-insights.png";
-import productionandsales from "/public/assets/images/manufacturing/productionandsales.png";
-import customer from "/public/assets/images/manufacturing/customer.png";
-import digitalreports from "/public/assets/images/manufacturing/digital-reports.png";
 import Image from "next/image";
 
 const energyData = {
@@ -13,7 +5,7 @@ const energyData = {
         {
             title: 'Optimise Energy Management with Our ',
             HighlightTitle: 'Balanced Scorecard Software  ',
-            Image: bannerSlide,
+            Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
             desc:"Transform your approach with Data Point Energy Balanced Scorecard Software to boost energy efficiency, drive sustainability, and achieve your strategic goals! "
           
            
@@ -29,8 +21,8 @@ const energyData = {
           description:
             "Data Point allows energy providers to easily track and optimise energy usage across operations, reducing waste and improving efficiency.",
           content: (
-              <Image
-              src={customizationImage}
+              <Image  height={200}
+              src="/assets/images/customization-img.png"
               width={1000}
               className="w-full"
               alt="linear board demo"
@@ -42,8 +34,8 @@ const energyData = {
           description:
             "Track and improve your sustainability efforts by measuring key indicators such as carbon emissions and renewable energy integration, helping meet regulatory and corporate social responsibility goals.",
           content: (
-              <Image
-              src={customizationImage}
+              <Image  height={200}
+              src="/assets/images/customization-img.png"
               width={1000}
               className="w-full"
               alt="linear board demo"
@@ -55,8 +47,8 @@ const energyData = {
           description:
             "Monitor and manage critical energy KPIs in real-time, including consumption, output efficiency, and cost-effectiveness, to make data-driven decisions.",
           content: (
-              <Image
-              src={customizationImage}
+              <Image  height={200}
+              src="/assets/images/customization-img.png"
               width={1000}
               className="w-full"
               alt="linear board demo"
@@ -68,8 +60,8 @@ const energyData = {
           description:
             "Ensure full compliance with energy regulations by tracking necessary metrics, generating reports, and maintaining transparency with stakeholders.",
           content: (
-              <Image
-              src={customizationImage}
+              <Image  height={200}
+              src="/assets/images/customization-img.png"
               width={1000}
               className="w-full"
               alt="linear board demo"
@@ -100,31 +92,31 @@ const energyData = {
       cardData:[
         {
           title: "Consistent Decision Making",
-          icon: ExecuteStrategies,
+          icon: "/assets/images/manufacturing/execute-strategies.png",
           content:
             "Make the right decisions, every single time. Easily analyse perspectives and their key performance indicators to make the correct decisions. Let everyone be well informed about the decisions that are being made.",
         },
         {
           title: "Analyse External and Internal Environment",
-          icon: strategicplan,
+          icon: "/assets/images/manufacturing/strategic-plan.png",
           content:
             "Digital Balanced Scorecard analyses both external and internal environments that contribute to the growth of an organisation. Various dashboards in BSC give an overview of the processes and related KPIs.",
         },
         {
           title: "One Solution for Better Strategy Management",
-          icon: datainsights,
+          icon: "/assets/images/manufacturing/data-insights.png",
           content:
             "The combined effort of both top and bottom level management results in effective strategic planning and management. Therefore, it is essential to have a solution that binds both and gives a better result.",
         },
         {
           title: "Transform Data into Meaningful Insights",
-          icon: productionandsales,
+          icon:  "/assets/images/manufacturing/productionandsales.png",
           content:
             "Gather data related to different departments, analyse and get meaningful insights. Data acquisition is not a problem anymore. Balanced Scorecard helps organisations understand the relationship between your measures and goal statuses.",
         },
         {
           title: "Innumerable Reports in a Click! ",
-          icon: customer,
+          icon: "/assets/images/manufacturing/customer.png",
           content:
             "Get countless digital reports. Digital Balanced Scorecard collects all information and auto-generates reports related to different processes and KPIs. Generate reports based on real-time information.",
         },

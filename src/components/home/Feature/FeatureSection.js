@@ -1,7 +1,6 @@
 // src/components/home/Feature/FeatureSection.js
 "use client";
 import { useState, useEffect, useRef } from "react";
-import bannerSlide from "/public/assets/images/bannerslide.png";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 import { gsap } from "gsap";
@@ -24,14 +23,14 @@ const FeatureSection = () => {
         "Monitor daily activities and track perforgdafvdmance",
         "Monitor daily activities and track perforsdfsdmance",
       ],
-      image: bannerSlide,
+      image: "/assets/images/bannerslide.png",
       alt: "tab image",
     },
     {
       title: "Gemba Walk",
       subTitle:
         "Optimise daily operations through systematic management Optimise",
-      image: bannerSlide,
+      image: "/assets/images/bannerslide.png",
       alt: "tab image",
       points: [
         "Monitor daily activities and track dfsd",
@@ -43,7 +42,7 @@ const FeatureSection = () => {
       title: "Digital Visual Management Board ",
       subTitle:
         "Optimise daily operations through systematic management Optimise",
-      image: bannerSlide,
+      image: "/assets/images/bannerslide.png",
       alt: "tab image",
       points: [
         "Monitor daily activities and track performance",
@@ -55,7 +54,7 @@ const FeatureSection = () => {
       title: "Strategy Planning  ",
       subTitle:
         "Optimise daily operations through systematic management Optimise",
-      image: bannerSlide,
+      image: "/assets/images/bannerslide.png",
       alt: "tab image",
       points: [
         "Monitor daily actddfsadivities and track performance",
@@ -67,7 +66,7 @@ const FeatureSection = () => {
       title: "KPI Visualisation  ",
       subTitle:
         "Optimise daily operations through systematic management Optimise",
-      image: bannerSlide,
+      image: "/assets/images/bannerslide.png",
       alt: "tab image",
       points: [
         "Monitor daily activities and track performance",
@@ -79,7 +78,7 @@ const FeatureSection = () => {
       title: "Strategy Execution",
       subTitle:
         "Optimise daily operations through systematic management Optimise",
-      image: bannerSlide,
+      image: "/assets/images/bannerslide.png",
       alt: "tab image",
       points: [
         "Monitor daily activities and track performance",
@@ -125,7 +124,7 @@ const FeatureSection = () => {
 
             <div className="lg:w-3/5 bg-white rounded-lg p-5 tab-shadow">
               <div className="flex items-center justify-center">
-                <Image src={tabs[activeTab].image} alt={tabs[activeTab].alt} width={500} />
+                <Image src={tabs[activeTab].image} alt={tabs[activeTab].alt} width={500} height={200} />
               </div>
               <div className="flex flex-col items-center pt-3">
                 <ul>

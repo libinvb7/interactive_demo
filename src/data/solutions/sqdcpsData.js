@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const sqdcpsData = {
   bannerData: {
     title: "Optimise Performance with",
     HighlightTitle: "SQDCPS Visual Planning Board Software ",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Drive efficiency with our SQDCPS board, designed to provide a comprehensive view of Safety, Quality, Delivery, Cost, People, and Sustainability metrics.",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const sqdcpsData = {
   cardData: [
     {
       title: "Performance Tracking System",
-      icon: visualmanagement,
+      icon: "/assets/images/icons/visual-management.png",
       content:
         " Monitor real-time performance data for quick, informed decision-making.",
     },
     {
       title: "Digital Visual Boards",
-      icon: realtimetracking,
+      icon: "/assets/images/icons/real-time-tracking.png",
       content:
         "Enhance transparency and engagement with a digital approach to visual management. ",
     },
     {
       title: "Continuous Improvement Software",
-      icon: importantmetrics,
+      icon: "/assets/images/icons/important-metrics.png",
       content:
         "Empower teams to continuously assess and improve operational performance.",
     },
@@ -48,8 +43,8 @@ const sqdcpsData = {
       description:
         "Track incidents and ensure a safe working environment. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -61,8 +56,8 @@ const sqdcpsData = {
       description:
         "Monitor product quality and enhance customer satisfaction. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -73,8 +68,8 @@ const sqdcpsData = {
       title: "Delivery",
       description: "Measure on-time delivery performance and address any delays. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -86,8 +81,8 @@ const sqdcpsData = {
       description:
         " Control and reduce operational costs with real-time tracking. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -99,8 +94,8 @@ const sqdcpsData = {
       description:
         "Evaluate workforce productivity and engagement. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -113,7 +108,7 @@ const sqdcpsData = {
         "Monitor and manage site-related activities to ensure operational efficiency and compliance. ",
       content: (
         <Image
-          src={customizationImage}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"

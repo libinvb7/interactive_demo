@@ -1,7 +1,6 @@
 "use client";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu.";
 import { cn } from "@/lib/utils";
-import Datapoint from "/public/assets/images/Datapoint_logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -15,7 +14,7 @@ export function NavbarDemo() {
 
 <Link href="/">
   <Image
-    src={Datapoint}
+    src="/assets/images/Datapoint_logo.png"
     className="bg-white rounded-lg p-2"
     alt="data point logo"
     width={150}
@@ -51,37 +50,37 @@ function Navbar({ className }) {
             <ProductItem
               title="Manufacturing"
               href="/manufacturing-balanced-scorecard-software"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
+              src="https:/assets.aceternity.com/demos/algochurn.webp"
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
               title="Energy"
               href="/energy-balanced-scorecard-software"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+              src="https:/assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
               title="Automotive"
               href="/automotive-balanced-scorecard-software"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
               title="Electronics"
               href="/electronics-balanced-scorecard-software"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
             <ProductItem
               title="FMCG & retail"
               href="/fmcg-retail-balanced-scorecard"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
             <ProductItem
               title="Banking"
               href="/bank-balanced-scorecard-board"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
            
@@ -93,67 +92,67 @@ function Navbar({ className }) {
             <ProductItem
               title="SQDCP"
               href="/sqcdp-board-visual-management-software"
-              src="https://assets.aceternity.com/demos/algochurn.webp"
+              src="https:/assets.aceternity.com/demos/algochurn.webp"
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
               title="SQCPL"
               href="/sqcpl-board_scorecard-system-strategy"
-              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+              src="https:/assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
               title="SQDCPS"
               href="/sqdcps-visual-planning-board-sofware"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
               title="ESQDCP "
               href="/esqdcp-board-visual-management-tool"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
              <ProductItem
               title="SQDCL"
               href="/sqdcl-board-visual-management-tool"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
              <ProductItem
               title="SQDCPSI"
               href="/sqdcpsi-visual-management-board-software"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
              <ProductItem
               title="EQDCPS"
               href="/eqdcps-board-strategy-plan-software"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
              <ProductItem
               title="SheQCPLDCPS"
               href="/sheqcpldcps-board-visual-strategy"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
              <ProductItem
               title="SQDCM"
               href="/sqdcm-visual-management-board"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
              <ProductItem
               title="FCIL"
               href="/fcil-balanced-scorecard"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
              <ProductItem
               title="SQDC"
               href="sqdc-visual-management-huddle-board"
-              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
           </div>

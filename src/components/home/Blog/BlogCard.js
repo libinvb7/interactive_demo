@@ -1,11 +1,10 @@
 import Image from "next/image";
-import blogImg from "/public/assets/blog/manufacturig-kpi-dahboard.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const BlogCard = () => {
   return (
     <div className="industry-card rounded-lg max-w-[350px]   p-3 relative mb-3">
-        <Image src={blogImg} alt="blogimageone"/>
+        <Image src="/assets/blog/manufacturig-kpi-dahboard.png" alt="blogimageone"  width={400}  height={200}/>
         <div className="btn-primary py-1 px-3 rounded-lg w-fit mt-2 text-white text-sm  ">
             Blog
         </div>

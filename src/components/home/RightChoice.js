@@ -1,9 +1,6 @@
-import Image from "next/image";
-import customizationIcon from "/public/assets/images/icons/customization.png";
-import integrationIcon from "/public/assets/images/icons/integration.png";
-import securityIcon from "/public/assets/images/icons/security.png";
-import customizationImage from "/public/assets/images/customization-img.png";
 import { FaCheck } from "react-icons/fa6";
+import Image from "next/image";
+
 
 const RightChoice = () => {
   return (
@@ -21,7 +18,7 @@ const RightChoice = () => {
             <div>
               <div className="flex gap-3 items-center">
                 
-                <Image src={customizationIcon} width={50} />
+                <Image  src="/assets/images/icons/customization.png" width={50}  height={200} alt="product logo"/>
                 <span className="text-card">Customisation</span>
               </div>
               <ul className="py-5">
@@ -43,20 +40,20 @@ const RightChoice = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16 order-1 md:order-2">
-            <Image src={customizationImage} />
+            <Image src="/assets/images/customization-img.png"  width={700}  height={700} alt="product logo"/>
           </div>
         </div>
         {/* first section */}
         {/* second section */}
         <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16 ">
-            <Image src={customizationImage} />
+            <Image src="/assets/images/customization-img.png"  width={700}  height={700} alt="product logo"/>
           </div>
           <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
             <div>
               <div className="flex gap-3 items-center">
                 {" "}
-                <Image src={integrationIcon} width={50} />{" "}
+                <Image src="/assets/images/icons/integration.png" width={50}   height={50} alt="product logo"/>{" "}
                 <span className="text-card">Integrations</span>
               </div>
               <ul className="py-5">
@@ -83,7 +80,7 @@ const RightChoice = () => {
             <div>
               <div className="flex gap-3 items-center">
                 {" "}
-                <Image src={securityIcon} width={50} />{" "}
+                <Image src="/assets/images/icons/security.png" width={50}  height={200}/>
                 <span className="text-card">Security</span>
               </div>
               <ul className="py-5">
@@ -102,7 +99,7 @@ const RightChoice = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16 order-1 md:order-2">
-            <Image src={customizationImage} />
+            <Image src="/assets/images/customization-img.png"  width={700}  height={700} alt="customization image"/>
           </div>
         </div>
         {/* third section */}

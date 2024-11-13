@@ -3,9 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import { PiCaretCircleRightThin, PiCaretCircleLeftThin } from "react-icons/pi";
-import author from "/public/assets/images/testimonials/author.png";
-import pciLogo from "/public/assets/images/testimonials/pci_logo.png";
-import quoteOne from "/public/assets/images/icons/quotes.png";
+
 
 const testimonials = [
   {
@@ -60,31 +58,31 @@ const TestimonialCarousel = () => {
             <div className="flex flex-col lg:flex-row">
               <div className="w-full lg:w-1/2 flex justify-center items-center flex-col">
                 <div className="flex justify-center items-center flex-col">
-                  <Image src={author} alt="author-img" className="w-24 md:w-72" />
+                  <Image  height={200}  width={150} src="/assets/images/testimonials/author.png" alt="author-img" className="w-24 md:w-72" />
                   <h2 className="text-primary md:text-2xl">
                     {testimonials[index].name}
                   </h2>
                   <p className="text-card font-[400]">
                     {testimonials[index].position}
                   </p>
-                  <Image
+                  <Image   width={150} height={200}
                     className="pt-3 w-24 md:w-56"
-                    src={pciLogo}
+                    src="/assets/images/testimonials/pci_logo.png"
                     alt="company-img"
                     
                   />
                 </div>
               </div>
               <div className="w-full lg:w-1/2 p-4 flex justify-center items-center relative">
-                <Image
+                <Image  width={150} height={200}
                   className="absolute top-9 left-4 w-20 md:w-36"
-                  src={quoteOne}
+                  src="/assets/images/icons/quotes.png"
                   alt="quote-img"
                   
                 />
-                <Image
+                <Image  width={150} height={200}
                   className="absolute bottom-9 right-4 scale-x-[-1] w-20 md:w-36"
-                  src={quoteOne}
+                  src="/assets/images/icons/quotes.png"
                   alt="quote-img"
                  
                 />

@@ -1,18 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import ExecuteStrategies from "/public/assets/images/manufacturing/execute-strategies.png";
-import strategicplan from "/public/assets/images/manufacturing/strategic-plan.png";
-import datainsights from "/public/assets/images/manufacturing/data-insights.png";
-import productionandsales from "/public/assets/images/manufacturing/productionandsales.png";
-import customer from "/public/assets/images/manufacturing/customer.png";
-import digitalreports from "/public/assets/images/manufacturing/digital-reports.png";
 import Image from "next/image";
 
 const manufacturingData = {
   bannerData: {
     title: " Optimise your Factory Operations with ",
     HighlightTitle: "Manufacturing Balanced Scorecard",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Use comprehensive Manufacturing Balanced Scorecard software with best Manufacturing KPI Dashboards to improve operational efficiency, track KPIs, and enhance production management for sustainable growth. ",
   },
   StickyScrollContentTitle: {
@@ -27,8 +19,8 @@ const manufacturingData = {
       description:
         "Data Point enables manufacturers to easily track and analyse Manufacturing Key Performance Indicators like OEE (Overall Equipment Effectiveness), ensuring alignment with strategic goals and operational efficiency.",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -40,8 +32,8 @@ const manufacturingData = {
       description:
         "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -53,8 +45,8 @@ const manufacturingData = {
       description:
         "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -66,8 +58,8 @@ const manufacturingData = {
       description:
         "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -98,37 +90,37 @@ const manufacturingData = {
   cardData: [
     {
       title: "Achieve strategic planning",
-      icon: ExecuteStrategies,
+      icon: "/assets/images/manufacturing/execute-strategies.png",
       content:
         "Data Point enhances organisational performance by aligning KPIs with strategic objectives across various levels, fostering a high-performance culture",
     },
     {
       title: "Execute strategies effectively",
-      icon: strategicplan,
+      icon: "/assets/images/manufacturing/strategic-plan.png",
       content:
         "Implement and assess your initiatives using the Digital Balanced Scorecard to ensure alignment with strategic goals.",
     },
     {
       title: "Transform data into insights",
-      icon: datainsights,
+      icon: "/assets/images/manufacturing/data-insights.png",
       content:
         "Analyse departmental data effortlessly to gain valuable insights with automated reports, ensuring you stay on top of your KPIs.",
     },
     {
       title: "Optimise production and sales",
-      icon: productionandsales,
+      icon: "/assets/images/manufacturing/productionandsales.png",
       content:
         "Continuously monitor KPIs to enhance production planning and sales, enabling organizations to anticipate demand and fulfill it promptly.",
     },
     {
       title: "Enhance customer satisfaction",
-      icon: customer,
+      icon:  "/assets/images/manufacturing/customer.png",
       content:
         "Visualise strategy maps and analyse KPIs to align processes with strategic goals, focusing on metrics like on-time delivery and quality that matter most to customers",
     },
     {
       title: "Customisable digital reportsd",
-      icon: digitalreports,
+      icon: "/assets/images/manufacturing/digital-reports.png",
       content:
         "Access a variety of digital reports tailored to monitor overall performance, generating insights from real-time data.",
     },

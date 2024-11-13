@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const eqdcpsData = {
   bannerData: {
     title: "Elevate your Strategy with",
     HighlightTitle: "EQDCPS Visual Boards ",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Use the EQDCPS framework to drive sustainable improvements in your organisation. ",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const eqdcpsData = {
   cardData: [
     {
       title: "Environmental Sustainability ",
-      icon: visualmanagement,
+      icon: "/assets/images/icons/visual-management.png",
       content:
         "Monitor and improve eco-friendly practices to reduce your carbon footprint.  ",
     },
     {
       title: "Quality Assurance   ",
-      icon: realtimetracking,
+      icon: "/assets/images/icons/real-time-tracking.png",
       content:
         "Ensure product and service quality to enhance customer satisfaction. ",
     },
     {
       title: "Operational Efficiency  ",
-      icon: importantmetrics,
+      icon:  "/assets/images/icons/important-metrics.png",
       content:
         "Streamline delivery processes and reduce costs for better profitability. ",
     },
@@ -48,8 +43,8 @@ const eqdcpsData = {
       description:
         "Monitor environmental impact and implement sustainable practices. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -61,8 +56,8 @@ const eqdcpsData = {
       description:
         "Maintain high-quality standards to ensure customer loyalty.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -73,8 +68,8 @@ const eqdcpsData = {
       title: "Delivery",
       description: "Track delivery timelines to optimise supply chain effectiveness.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -86,8 +81,8 @@ const eqdcpsData = {
       description:
         "Manage costs effectively to improve financial performance.",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -99,8 +94,8 @@ const eqdcpsData = {
       description:
         " Evaluate workforce engagement and drive productivity. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -112,8 +107,8 @@ const eqdcpsData = {
       description:
         "Implement site-specific initiatives for operational excellence.  ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image  height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"

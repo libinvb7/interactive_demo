@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const sqdcpData = {
   bannerData: {
     title: " Streamline your Shop Floor with",
     HighlightTitle: "SQCDP Board Visual Management Software ",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Maximise productivity and optimise shop floor operations with a digital SQCDP board designed for real-time performance tracking. ",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const sqdcpData = {
   cardData: [
     {
       title: "Lean Manufacturing Visual Management",
-      icon: visualmanagement,
+      icon: "/assets/images/icons/visual-management.png",
       content:
         "Enhance operational transparency and decision-making with a visual approach to manufacturing management.",
     },
     {
       title: "Real-Time Production Tracking",
-      icon: realtimetracking,
+      icon: "/assets/images/icons/real-time-tracking.png",
       content:
         "Get instant insights into your shop floor performance across key metrics like SQDCP.",
     },
     {
       title: "Continuous Improvement Metrics",
-      icon: importantmetrics,
+      icon:  "/assets/images/icons/important-metrics.png",
       content:
         "Use real-time data to track, analyse, and improve KPIs consistently.",
     },
@@ -48,8 +43,8 @@ const sqdcpData = {
       description:
         "Monitor incidents, hazards, and ensure workplace safety compliance. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -61,8 +56,8 @@ const sqdcpData = {
       description:
         "Track product quality, defects, and customer satisfaction rates. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -73,8 +68,8 @@ const sqdcpData = {
       title: "Delivery",
       description: "Keep delivery timelines on track and optimise logistics. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -86,8 +81,8 @@ const sqdcpData = {
       description:
         " Control and reduce manufacturing costs with real-time cost tracking. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -99,8 +94,8 @@ const sqdcpData = {
       description:
         "Measure workforce productivity, engagement, and skills development. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"

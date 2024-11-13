@@ -1,5 +1,4 @@
 import Image from "next/image";
-import customizationImage from "/public/assets/images/customization-img.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { RiDashboardFill } from "react-icons/ri";
 import { PiVideoFill } from "react-icons/pi";
@@ -18,7 +17,7 @@ const TemplateSection = () => {
                   <br />
                   Data Point resources
                 </h2>
-                <Image src={customizationImage} width={500} />
+                <Image src="/assets/images/customization-img.png" width={500}  height={200} alt="product logo"/>
               </div>
             </div>
             <div className=" relative w-full lg:w-1/2 P-5 ">

@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const sqdcpsiData = {
   bannerData: {
     title: "Enhance Performance with ",
     HighlightTitle: "SQDCPSI Visual Management Boards ",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Streamline operations and improve accountability across Safety, Quality, Delivery, Cost, People, Site Action, and Inventory metrics. ",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const sqdcpsiData = {
   cardData: [
     {
       title: "Operational Excellence ",
-      icon: visualmanagement,
+      icon: "/assets/images/icons/visual-management.png",
       content:
         "Monitor and improve safety, quality, and delivery to enhance overall performance.  ",
     },
     {
       title: "Cost Efficiency  ",
-      icon: realtimetracking,
+      icon: "/assets/images/icons/real-time-tracking.png",
       content:
         "Control costs and reduce waste for improved profitability across operations. ",
     },
     {
       title: "Workforce Engagement ",
-      icon: importantmetrics,
+      icon: "/assets/images/icons/important-metrics.png",
       content:
         " Assess employee productivity and morale to foster a motivated workforce.  ",
     },
@@ -48,8 +43,8 @@ const sqdcpsiData = {
       description:
         "Track and improve workplace safety measures",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -61,8 +56,8 @@ const sqdcpsiData = {
       description:
         "Monitor and enhance product quality consistently. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -73,8 +68,8 @@ const sqdcpsiData = {
       title: "Delivery",
       description: "Improve delivery times to meet customer expectations. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -86,8 +81,8 @@ const sqdcpsiData = {
       description:
         "Streamline costs to enhance overall profitability. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -99,8 +94,8 @@ const sqdcpsiData = {
       description:
         "Foster a motivated and productive workforce. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -112,8 +107,8 @@ const sqdcpsiData = {
       description:
         "Facilitate rapid responses to site-level issues. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -125,8 +120,8 @@ const sqdcpsiData = {
       description:
         "Optimise inventory management to reduce waste.",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"

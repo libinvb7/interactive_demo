@@ -1,15 +1,10 @@
-import bannerSlide from "/public/assets/images/industries/manufacturing/manufacturing-banner.png";
-import customizationImage from "/public/assets/images/customization-img.png";
-import importantmetrics from "/public/assets/images/icons/important-metrics.png";
-import realtimetracking from "/public/assets/images/icons/real-time-tracking.png";
-import visualmanagement from "/public/assets/images/icons/visual-management.png";
 import Image from "next/image";
 
 const sqdclData = {
   bannerData: {
     title: " SQDCL Board: Driving Operational",
     HighlightTitle: "Excellence with Visual Management  ",
-    Image: bannerSlide,
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Manage and optimise your Safety, Quality, Delivery, Cost, and Lean metrics with the powerful SQDCL Board. ",
   },
   cardSectionTitle: {
@@ -19,19 +14,19 @@ const sqdclData = {
   cardData: [
     {
       title: "Integrated Performance Dashboard ",
-      icon: visualmanagement,
+      icon: "/assets/images/icons/visual-management.png",
       content:
         "The Integrated Performance Dashboard consolidates Safety, Quality, Delivery, Cost, and Lean metrics for streamlined monitoring. ",
     },
     {
       title: "Operational Efficiency Tracking ",
-      icon: realtimetracking,
+      icon: "/assets/images/icons/real-time-tracking.png",
       content:
         "Real-time tracking of operational metrics enables quick identification of issues and enhances overall productivity. ",
     },
     {
       title: "Data-Driven Lean Insights  ",
-      icon: importantmetrics,
+      icon: "/assets/images/icons/important-metrics.png",
       content:
         "Actionable insights empower teams to implement Lean practices, driving continuous improvement and aligning efforts with organisational objectives.  ",
     },
@@ -48,8 +43,8 @@ const sqdclData = {
       description:
         "Track incidents and promote a safe workplace environment. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/   height={200}/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -61,8 +56,8 @@ const sqdclData = {
       description:
         "Ensure quality consistency to boost product and service reliability.",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -73,8 +68,8 @@ const sqdclData = {
       title: "Delivery",
       description: "Track and improve delivery performance to meet deadlines efficiently.",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -86,8 +81,8 @@ const sqdclData = {
       description:
         "Control operational costs and reduce waste for improved profitability. ",
       content: (
-        <Image
-          src={customizationImage}
+        <Image   height={200}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
@@ -100,7 +95,7 @@ const sqdclData = {
         "Provide teams with real-time data to implement Lean practices and drive continuous improvement. ",
       content: (
         <Image
-          src={customizationImage}
+          src="/assets/images/customization-img.png"
           width={1000}
           className="w-full"
           alt="linear board demo"
