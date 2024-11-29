@@ -14,7 +14,7 @@ import energyData from "../../data/industires/energyData";
 
 const page = () => {
   return (
-    <div className="bg-industry-home">
+    <div >
       <Banner
         title={energyData.bannerData?.title}
         highlightTitle={energyData.bannerData?.HighlightTitle}

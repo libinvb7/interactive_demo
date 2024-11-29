@@ -13,7 +13,7 @@ import fmcgData from "../../data/industires/fmcgData";
 
 const page = () => {
   return (
-    <div className="bg-industry-home">
+    <div >
       <Banner
         title={fmcgData.bannerData?.title}
         highlightTitle={fmcgData.bannerData?.HighlightTitle}

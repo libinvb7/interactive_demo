@@ -92,13 +92,13 @@ const automotiveData = {
       cardData:[
         {
           title: "Consistent Decision Making ",
-          icon: ExecuteStrategies,
+          icon: "/assets/images/manufacturing/execute-strategies.png",
           content:
             "Make the right decisions, every single time. Easily analyse perspectives and their key performance indicators to make the correct decisions. Let everyone be well informed about the decisions that are being made.",
         },
         {
           title: "Transparent Communication ",
-          icon: strategicplan,
+          icon: "/assets/images/manufacturing/execute-strategies.png",
           content:
             "Communicate easily within and across departments. Make sure the employees know what is happening. Help them align their actions to organisational goals. Let the communication be precise and clear.  ",
         },

@@ -35,16 +35,16 @@ const CountItem = ({ title, end, }) => {
   }, [end, 3]);
 
   return (
-    <div className="counter-border relative w-full md:w-1/3 mb-4 flex justify-center items-center mb-16 flex-col">
+    <div className="counter-border relative w-full md:w-1/3  flex justify-center items-center  flex-col">
       <div>
         <h2
-          className="font-bold text-5xl bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] bg-clip-text text-transparent"
+          className="font-bold text-5xl bg-gradient-to-r from-[#A9EBFF] to-[#8FFFFD] bg-clip-text text-transparent"
           ref={counterRef}
         >
           0%
         </h2>
       </div>
-      <h3 className="text-card pt-3 max-w-60 px-1">{title}</h3>
+      <h3 className="text-white text-xl pt-3 max-w-60 px-1">{title}</h3>
     </div>
   );
 };

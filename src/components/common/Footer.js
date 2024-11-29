@@ -46,7 +46,7 @@ const partnerLogo = [
 
 const Footer = () => {
   return (
-    <footer className="footer-bg pt-[150px] lg:pt-[300px]">
+    <footer className="footer-bg pt-24 mt-20">
       <div className="container">
         <div className="flex flex-wrap justify-center relative top-50">
           <div className="  w-full md:w-1/5 flex flex-col  ">

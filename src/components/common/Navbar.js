@@ -49,7 +49,7 @@ const Navbar = () => {
                 </div>
                 <div className='hidden xl:flex  items-center gap-3  '>
                     <button className={`btn ${borderColor}`} style={{ color: color, transition: 'color 0.3s ease', }}>Get Started</button>
-                    <button className='btn btn-primary'>Book a Demo</button>
+                    <button className='btn btn-orange'>Book a Demo</button>
                 </div>
             </div>
         </div>

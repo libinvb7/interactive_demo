@@ -21,9 +21,7 @@ const BlogListing = () => {
   </div>
 </div>
 
-      <div className="flex justify-center pt-20">
-      <button className='btn btn-primary'>Learn More</button>
-      </div>
+     
     </div>
   </section>
   )

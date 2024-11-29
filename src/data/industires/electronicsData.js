@@ -45,7 +45,7 @@ const electronicData = {
         {
           title: "Quality Management ",
           description:
-            "Implement practices that enhance product quality in the electronics sector by leveraging KPIs to track defects, measure "/assets/images/manufacturing/customer.png" satisfaction, and ensure compliance with industry standards. ",
+            "Implement practices that enhance product quality in the electronics sector by leveraging KPIs to track defects, measure satisfaction, and ensure compliance with industry standards. ",
           content: (
               <Image  height={200}
               src="/assets/images/customization-img.png"
@@ -136,7 +136,7 @@ const electronicData = {
         {
           title: "What specific KPIs should electronics companies focus on? ",
           content:
-            "Electronics manufacturers should track KPIs like Overall Equipment Effectiveness (OEE), first-pass yield, cycle time, and "/assets/images/manufacturing/customer.png" satisfaction scores to ensure optimal performance.",
+            "Electronics manufacturers should track KPIs like Overall Equipment Effectiveness (OEE), first-pass yield, cycle time, and satisfaction scores to ensure optimal performance.",
         },
         {
           title:

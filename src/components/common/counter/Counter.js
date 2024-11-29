@@ -12,8 +12,10 @@ const Counter = ({counterData,counterTitle}) => {
           </h2>
         </div>
 
-        <div className=" p-3 pt-5 lg:p-4  glass-bg">
-          <div className="flex flex-col md:flex-row  text-center justify-between">
+        <div className=" p-3 pt-5 lg:p-8  glass-bg custom-counter overflow-hidden lg:py-10">
+        <div className="counter-circle"></div>
+
+          <div className="flex flex-col md:flex-row  text-center justify-between items-center">
             {
               counterData?.map((counterNum,index) =>(
                 <CountItem key={index} end={counterNum.number} title={counterNum.title}/>

@@ -1,11 +1,10 @@
-// src/components/home/Feature/FeatureSection.js
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { FaCheck } from "react-icons/fa6";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Tabs from "./TabsNew";
+import { GiCheckMark } from "react-icons/gi";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,7 +117,7 @@ const FeatureSection = () => {
           </h2>
         </div>
 
-        <div className="glass-bg p-3">
+        <div className="glass-bg p-10">
           <div className="lg:flex gap-4">
             <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
 
@@ -130,7 +129,9 @@ const FeatureSection = () => {
                 <ul>
                   {tabs[activeTab].points.map((point, i) => (
                     <li key={i} className="flex gap-3 py-2 items-center font-[600]">
-                      <FaCheck className="text-[#37BDB0]" /> {point}
+                       <div className=" bg-[#37C1F1]/20 rounded-full h-fit ">
+                <GiCheckMark className="text-[#0F79C0] text-xl p-1 font-extrabold" />
+              </div> {point}
                     </li>
                   ))}
                 </ul>

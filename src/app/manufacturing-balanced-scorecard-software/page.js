@@ -14,7 +14,7 @@ import manufacturingData from "../../data/industires/manufacturingData";
 
 const page = () => {
   return (
-    <div className="bg-industry-home">
+    <div >
       <Banner
         title={manufacturingData.bannerData?.title}
         highlightTitle={manufacturingData.bannerData?.HighlightTitle}

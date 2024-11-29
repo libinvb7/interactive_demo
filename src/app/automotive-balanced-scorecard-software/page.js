@@ -1,6 +1,5 @@
 import { ClientCarousel } from "@/components/home/ClientCarousel";
 import Counter from "@/components/common/counter/Counter";
-import IndustrySection from "@/components/home/industry/IndustrySection";
 import AccordionSection from "@/components/industries/AccordionSection";
 import ManufacturingCompaniesUseBalancedScorecard from "@/components/industries/ManufacturingCompaniesUseBalancedScorecard";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
@@ -14,7 +13,7 @@ import automotiveData from "../../data/industires/automotiveData";
 
 const page = () => {
   return (
-    <div className="bg-industry-home">
+    <div >
       <Banner
         title={automotiveData.bannerData?.title}
         highlightTitle={automotiveData.bannerData?.HighlightTitle}

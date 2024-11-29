@@ -4,6 +4,33 @@
 
 @layer utilities {
   /* globals.css */
+  .swiper {
+    width: 100%!important;
+    height: 100vh!important;;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
   #smooth-wrapper {
     overflow: hidden;
   }
@@ -12,25 +39,6 @@
     position: relative;
   }
 
-  .bg-body-home {
-    background: url(/assets/images/home-background.svg);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
-  .bg-industry-home {
-    background: url(/assets/images/Industries-bg.svg);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
-  .bg-solutions-home {
-    background: url(/assets/images/Solutions-bg.svg);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    background-position: top;
-  }
 
   .hero-background {
     width: 100%;
@@ -41,7 +49,7 @@
   .glass-bg {
     backdrop-filter: blur(16px) saturate(163%);
     -webkit-backdrop-filter: blur(16px) saturate(163%);
-    background-color: rgba(255, 255, 255, 0.59);
+    background-color: rgb(255, 255, 255);
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
     /* padding: 30px; */
@@ -60,13 +68,12 @@
     box-shadow: 4px 4px 85px 0px rgba(24, 115, 172, 0.29);
   }
   .industry-section {
-    background: url(/assets/images/industry-section.png);
+    background: linear-gradient(77deg, #145994 13.5%, #003058 97.89%);
+    clip-path: polygon(0% 6.3%, 100% 0%, 100% 92.8%, 0% 100%);
     background-size: cover;
     padding-bottom: 100px;
     width: 100%;
     background-repeat: no-repeat;
-    position: relative;
-    bottom: 100px;
   }
   .industry-card {
     background: #fff;
@@ -94,7 +101,7 @@
     background: linear-gradient(to right, #37c1f1, #37bdb0);
   }
   .footer-bg {
-    background: url(/assets/images/footer-background.png);
+    background: linear-gradient(84deg, #145994 3.28%, #003058 97.67%);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -166,6 +173,31 @@
     font-weight: bold;
     color: #2c3e50;
   }
+
+
+  .custom-counter{
+    background:#073D6B ;
+
+    }
+    .counter-circle{
+      position: absolute;
+      top: 0px;
+      left: -13px;
+      height: 231px;
+      width: 110%;
+      background: #164d79bb;
+      clip-path: ellipse(49% 70% at 45% 0%);
+
+    }
+    .custom-shadow{
+      -webkit-box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
+      -moz-box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
+      box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
+    }
+    .cta-background{
+      background:url(../../public/assets/CTAbg.png)
+    }
+
 }
 
 @layer components {
@@ -177,6 +209,10 @@
   }
   .btn-primary {
     @apply bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] border-0 transform transition-transform duration-300 ease-in-out;
+  }
+  .btn-orange{
+    @apply bg-gradient-to-r from-[#FF8336] to-[#FF7824] border-0 transform transition-transform duration-300 ease-in-out;
+
   }
   .btn-primary:hover {
     @apply scale-105 bg-gradient-to-l from-[#37BDB0] to-[#37C1F1];

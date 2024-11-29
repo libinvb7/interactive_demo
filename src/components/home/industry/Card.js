@@ -1,29 +1,54 @@
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa6";
 import { PiArrowUpRightThin } from "react-icons/pi";
+import { GiCheckMark } from "react-icons/gi";
+import { FaArrowRight } from "react-icons/fa6";
+
 import Link from "next/link";
 
-const Card = ({data}) => {
-    const { title, content,icon,link } = data; 
+const Card = ({ data }) => {
+  const { title, content, icon, link } = data;
 
   return (
-    <div className="group  industry-card rounded-lg max-w-[350px] md:h-[350px] md:h-[400px] p-5 relative cursor-pointer overflow-clip  bg-white hover:bg-gradient-to-r hover:scale-105 shadow-lg p-5 lg:p-10 w-full text-left rounded-lg mb-3 transition duration-300 ">
-      <Image src="/assets/images/card-bg.png"  width={500} height={300} alt="industry-card-bg" className="absolute top-0 left-0 z-1 group-hover:scale-x-150 transition duration-300"/>
-      <Image src={icon}  width={80} className="py-2 relative z-10 group-hover:scale-110  transition duration-300 ease-in-out" height={80}  alt="banner"/>
-      <h2 className="text-card">{title}</h2>
+    <div className="group  industry-card rounded-lg max-w-[350px] md:h-[450px] lg:h-[460px] p-5 relative cursor-pointer overflow-clip  bg-white hover:bg-gradient-to-r hover:scale-105 shadow-lg p-5 lg:p-5 w-full text-left rounded-lg mb-3 transition duration-300 ">
+      <Image
+        src={icon}
+        width={400}
+        className="py-1 relative z-10  rounded-lg"
+        height={80}
+        alt="banner"
+      />
+      <h2 className="text-card absolute top-[170px] px-5 z-10 text-white">
+        {title}
+      </h2>
       <div className="flex flex-col items-start pt-3">
-      <ul>
-         {
-            content.map((listitem, index) => (
-              <li className="flex gap-3 py-2 items-center font-[600]" key={index}>
-                <FaCheck className="text-[#37BDB0]" /> {listitem}
-              </li>
-            ))
-          }
+        <ul>
+          {content.map((listitem, index) => (
+            <li className="flex gap-3 py-2 items-center font-[600]" key={index}>
+              <div className=" bg-[#37C1F1]/20 rounded-full h-fit">
+                <GiCheckMark className="text-[#0F79C0] text-xl p-1 font-extrabold" />
+              </div>
+              {listitem}
+            </li>
+          ))}
         </ul>
       </div>
-      <button className="absolute top-[20px] right-[20px] border border-1 border-[#115991] rounded-[50%] p-1">
-      <Link href={link}>  <PiArrowUpRightThin className="text-4xl text-[#115991] group-hover:scale-110 group-hover:rotate-45 transition duration-300 ease-in-out" /></Link>
+      <button className="border border-0 pt-2 w-full">
+        <Link href={link}>
+          <div className="flex justify-between items-center">
+            <div className="bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] bg-clip-text text-transparent font-bold">
+              Learn More
+            </div>
+            <div>
+              <div className=" w-fit relative  transition duration-300 mb-3  z-[99]  bg-gradient-to-r from-[#37C1F1] to-[#37BDB0] rounded-full">
+                <div className="bg-gradient-to-b from-[#37C1F1]/30 to-[#37BDB0]/30 p-1 px-3 rounded-full w-fit absolute left-[0px] top-0 w-full h-full z-[1] group-hover:translate-x-[-7px]  transition duration-300"></div>
+                <div className="bg-gradient-to-b from-[#37BDB0]/15 to-[#0097FE]/15 p-1 px-3 rounded-full w-fit absolute left-[0px] top-0 w-full h-full z-[-1] group-hover:translate-x-[-14px] transition duration-300"></div>
+
+                <FaArrowRight className="text-white font-bold text-2xl p-1" />
+              </div>
+            </div>
+          </div>
+        </Link>
       </button>
     </div>
   );

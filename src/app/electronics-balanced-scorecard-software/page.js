@@ -14,7 +14,7 @@ import electronicsData from "../../data/industires/electronicsData";
 
 const page = () => {
   return (
-    <div className="bg-industry-home">
+    <div >
       <Banner
         title={electronicsData.bannerData?.title}
         highlightTitle={electronicsData.bannerData?.HighlightTitle}

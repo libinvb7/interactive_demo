@@ -10,6 +10,7 @@ import TemplateSection from "@/components/home/TemplateSection";
 import Cta from "@/components/home/Cta";
 import Footer from "@/components/common/Footer";
 import BlogListing from "@/components/home/Blog/BlogListing";
+import Slider from "@/components/common/slider/Slider";
 
 const counterContent = {
   counterTitle: {
@@ -33,8 +34,9 @@ const counterContent = {
 
 const page = () => {
   return (
-    <div className="bg-body-home">
-      <Hero />
+    <div >
+      {/* <Hero /> */}
+      <Slider/>
       <VideoSection title="Experience the power of Data Point in action" />
       <ClientCarousel />
       <FeatureSection />

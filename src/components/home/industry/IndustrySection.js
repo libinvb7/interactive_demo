@@ -3,7 +3,7 @@ import Card from "./Card"
 const cardData=[
   {
       "title": "Manufacturing Balanced Scorecard",
-      "icon":"/assets/images/icons/manufactuing-icon.png",
+      "icon":"/assets/images/industries-home/industry-one.jpg",
       "content": [
           "Improve Efficiency in Production",
           "Strategic Goal Alignment",
@@ -14,7 +14,7 @@ const cardData=[
   },
   {
       "title": "Service based industries Balanced Scorecard",
-      "icon":"/assets/images/icons/service-based.png",
+      "icon":"/assets/images/industries-home/industry-one.jpg",
       "content": [
           "Ensure customer satisfaction",
           "Resource optimisation",
@@ -25,7 +25,7 @@ const cardData=[
   },
   {
       "title": "Automotive Balanced Scorecard",
-      "icon":"/assets/images/icons/automotive.png",
+      "icon":"/assets/images/industries-home/industry-one.jpg",
       "content": [
           "Optimise supply chains",
           "Boost innovation",
@@ -36,7 +36,7 @@ const cardData=[
   },
   {
       "title": "Healthcare Balanced Scorecard",
-      "icon":"/assets/images/icons/healthCareicon.png",
+      "icon":"/assets/images/industries-home/industry-one.jpg",
       "content": [
           "Enhance patient care",
           "Optimise resource utilisation",
@@ -47,7 +47,7 @@ const cardData=[
   },
   {
       "title": "Energy sector Balanced Scorecard",
-      "icon": "/assets/images/icons/energy.png",
+      "icon": "/assets/images/industries-home/industry-one.jpg",
       "content": [
           "Optimise energy production",
           "Sustainability goals",
@@ -58,7 +58,7 @@ const cardData=[
   },
   {
       "title": "Electronics industry Balanced Scorecard",
-      "icon":"/assets/images/icons/electronic.png",
+      "icon":"/assets/images/industries-home/industry-one.jpg",
       "content": [
           "Accelerate innovation",
           "Optimise production",
@@ -72,7 +72,7 @@ const cardData=[
 
 const IndustrySection = () => {
   return (
-    <section className="px-6 industry-section pt-52 "  >
+    <section className="px-6 industry-section pt-36 mt-20 "  >
       
       <div className="container">
         <div className="flex justify-center items-center gap-10">
@@ -85,7 +85,7 @@ const IndustrySection = () => {
         <div className="flex flex-wrap justify-center">
           {
             cardData.map((data,index)=>(
-<div className="w-full lg:w-1/3 md:w-1/2 px-2 mb-4 flex justify-center items-center mb-16" key={index}>
+<div className="w-full lg:w-1/3 md:w-1/2 s mb-4 flex justify-center items-center mb-16 " key={index}>
     <Card data={data}/>
   </div>
 

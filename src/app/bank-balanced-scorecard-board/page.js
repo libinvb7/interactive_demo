@@ -14,7 +14,7 @@ import bankData from "../../data/industires/bankData";
 
 const page = () => {
   return (
-    <div className="bg-industry-home">
+    <div >
       <Banner
         title={bankData.bannerData?.title}
         highlightTitle={bankData.bannerData?.HighlightTitle}
