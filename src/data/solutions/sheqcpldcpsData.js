@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const sheqcpldcpsData = {
   bannerData: {
-    title: "Optimise Operations with",
-    HighlightTitle: "SHEQCPLDCPS Boards ",
+    title: "Optimise Operations with SHEQCPLDCPS Boards",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Integrate Safety, Health and Environment (SHE), Quality, Customer, Production, Lean, Delivery, Cost, People and Site Action to drive performance and ensure sustainable growth. ",
   },
@@ -31,131 +30,95 @@ const sheqcpldcpsData = {
         "Implement lean principles to reduce waste, optimise costs, and improve profitability. ",
     },
   ],
-
-  StickyScrollContentTitle: {
+  leftRightDataTitles: {
     title: "Key Metrics in SHEQCPLDCPS",
     content:
-      "SHEQCPLDCPS framework brings together key metrics for holistic organisational improvement.  ",
+      "SHEQCPLDCPS framework brings together key metrics for holistic organisational improvement. ",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Safety, Health, and Environment (SHE)",
-      description:
-        " Ensure a safe and compliant workplace while meeting environmental sustainability goals. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Safety, Health, and Environment (SHE)",
+      content:
+        "Ensure a safe and compliant workplace while meeting environmental sustainability goals.",
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Quality",
-      description:
-        "Maintain high-quality standards to meet customer expectations and improve product consistency.  ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Quality",
+      content:
+        "Maintain high-quality standards to meet customer expectations and improve product consistency.",
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Customer",
-      description: "Drive customer satisfaction through improved delivery times and product quality.   ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Customer ",
+      content:
+        "Drive customer satisfaction through improved delivery times and product quality. ",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Production",
-      description:
-        " Streamline production processes for better efficiency and reduced waste. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Production",
+      content:
+        "Streamline production processes for better efficiency and reduced waste.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Lean",
-      description:
-        "Adopt lean methodologies to eliminate waste and drive cost efficiency.  ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Lean ",
+      content:
+        "Adopt lean methodologies to eliminate waste and drive cost efficiency.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Delivery",
-      description:
-        " Track delivery performance to ensure on-time shipments and reduce delays.  ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Delivery ",
+      content:
+        "Track delivery performance to ensure on-time shipments and reduce delays.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Cost",
-      description:
-        "Manage operational costs effectively to improve financial performance. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Cost ",
+      content:
+        "Manage operational costs effectively to improve financial performance.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "People",
-      description:
-        "  Engage employees and boost productivity through focused performance management.  ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "People ",
+      content:
+        "Engage employees and boost productivity through focused performance management.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Site Action",
-      description:
-        "  Implement site-specific actions to address localised challenges and drive operational improvements.  ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Site Action ",
+      content:
+        "Implement site-specific actions to address localised challenges and drive operational improvements.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
-       
   ],
+ 
   counterTitle: {
     title: "Boosting Performance with SHEQCPLDCPS Boards  ",
   },

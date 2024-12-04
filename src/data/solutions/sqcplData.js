@@ -2,9 +2,8 @@ import Image from "next/image";
 
 const sqcplData = {
   bannerData: {
-    title: " Enhance your Strategy with ",
-    HighlightTitle: "SQCPL Board Scorecard System",
-    Image:  "/assets/images/industries/manufacturing/manufacturing-banner.png",
+    title: " Enhance your Strategy with SQCPL Board Scorecard System",
+    Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Achieve operational excellence with SQCPL board visual management board, designed for effective strategy management and performance tracking. ",
   },
   cardSectionTitle: {
@@ -32,77 +31,56 @@ const sqcplData = {
     },
   ],
 
-  StickyScrollContentTitle: {
-    title:
-      "Visualise Key Performance Metrics with the SQCPL Board ",
+  leftRightDataTitles: {
+    title: "Visualise Key Performance Metrics with the SQCPL Board ",
     content:
-      " Monitor and improve your organisation's performance with a comprehensive view of Safety, Quality, Cost, People, and Lean metrics. ",
+      "Monitor and improve your organisation's performance with a comprehensive view of Safety, Quality, Cost, People, and Lean metrics. ",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Safety",
-      description:
-        "Balanced Scorecard tracks accidents, and records the serious near-miss that occurred onsite. BSC analyses health and safety records and gives you a clear idea about the safety measures and to identify areas that require more attention.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Safety",
+      content:
+        "Balanced Scorecard tracks accidents, and records the serious near-miss that occurred onsite. BSC analyses health and safety records and gives you a clear idea about the safety measures and to identify areas that require more attention. ",
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Quality",
-      description:
+      imageSide: "right",
+      titles: "Quality",
+      content:
         "Quality metrics in balanced scorecard help organisations to measure the defect level of incoming and in house products as perceived and measured by the customer. Using quality metrics, organisations can easily manage and track quality related processes.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Customer",
-      description:
-        "Customer Metrics in Balanced Scorecard allows organisations to analyse where they are on their delivery process towards customers and identify the ways to improve the process. Drawbacks can be evaluated and solved.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Delivery ",
+      content:
+        "Track and improve delivery performance to meet deadlines efficiently. ",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Production",
-      description:
-        "Production metrics display KPIs based on daily production data. KPIs will be listed and analysed based on target vs actual. Production metrics can help you find the sticking points or weak spots in your production line and processes.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Cost",
+      content:
+        "Control operational costs and reduce waste for improved profitability.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Lean",
-      description:
-        "Lean Metrics will help the organisation analyse where you are in the lean journey. Lean metrics can be used to control and monitor the manufacturing processes and can identify the opportunities for improvements and changes.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Lean ",
+      content:
+        "Provide teams with real-time data to implement Lean practices and drive continuous improvement. ",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
   ],
   counterTitle: {
@@ -129,28 +107,26 @@ const sqcplData = {
   },
   accordionItems: [
     {
-        title: "What is an SQCPL Board? ",
-        content:
-          "The SQCPL Board is a performance management tool that integrates Safety, Quality, Cost, People, and Lean metrics to improve operational efficiency. ",
-      },
-      {
-        title: "How does the SQCPL Board enhance strategy management? ",
-        content:
-          "It provides real-time visibility into performance metrics, enabling organisations to align their strategic goals and make informed decisions. ",
-      },
-      {
-        title:
-          "How to use the SQCPL Board?",
-        content:
-          "Identify key metrics, strategically place the board, review data regularly, and evaluate progress over time. ",
-      },
-      {
-        title: "What are the advantages of using an SQCPL Board? ",
-        content:
-          "The SQCPL Board helps in tracking performance metrics, fostering continuous improvement, and enhancing team collaboration. ",
-      },
+      title: "What is an SQCPL Board? ",
+      content:
+        "The SQCPL Board is a performance management tool that integrates Safety, Quality, Cost, People, and Lean metrics to improve operational efficiency. ",
+    },
+    {
+      title: "How does the SQCPL Board enhance strategy management? ",
+      content:
+        "It provides real-time visibility into performance metrics, enabling organisations to align their strategic goals and make informed decisions. ",
+    },
+    {
+      title: "How to use the SQCPL Board?",
+      content:
+        "Identify key metrics, strategically place the board, review data regularly, and evaluate progress over time. ",
+    },
+    {
+      title: "What are the advantages of using an SQCPL Board? ",
+      content:
+        "The SQCPL Board helps in tracking performance metrics, fostering continuous improvement, and enhancing team collaboration. ",
+    },
   ],
-
 };
 
 export default sqcplData;

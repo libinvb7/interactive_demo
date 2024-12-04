@@ -3,72 +3,60 @@ import Image from "next/image";
 const bankData = {
   bannerData:
         {
-            title: 'Transform your Banking Operations with ',
-            HighlightTitle: 'a Strategic Balanced Scorecard',
+            title: 'Transform your Banking Operations with a Strategic Balanced Scorecard ',
             Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
             desc:"Leverage our comprehensive Banking Balanced Scorecard software with advanced KPI dashboards to enhance operational efficiency, monitor Key Performance Indicators, and improve financial management for sustainable growth in the banking sector."
           
            
         
       },
-      StickyScrollContentTitle:{
-        title: 'Transforming Banking Challenges into Opportunities: Why Data Point is your Smartest Solution?',
-        content: "A Balanced Scorecard (BSC) is a strategic management tool that enables banks to align financial and non-financial KPIs, driving performance in areas like financial growth, customer satisfaction, operational efficiency, and risk management."
+      leftRightDataTitles: {
+        title:
+          "Transforming Banking Challenges into Opportunities: Why Data Point is your Smartest Solution?",
+        content:
+          "A Balanced Scorecard (BSC) is a strategic management tool that enables banks to align financial and non-financial KPIs, driving performance in areas like financial growth, customer satisfaction, operational efficiency, and risk management.",
       },
-    StickyScrollContent:[
+      leftRightData: [
         {
-          title: "Strategic Planning",
-          description:
+          imageSide: "left",
+          titles: "Strategic Planning",
+          content:
             "Balanced Scorecard serves as a crucial tool for banks to define and communicate their vision, mission, and strategic objectives. It ensures alignment across all levels of the organisation, driving cohesive efforts toward common goals.",
-          content: (
-              <Image
-              src="/assets/images/customization-img.png"
-              width={1000}  height={200}
-              className="w-full"
-              alt="linear board demo"
-            />
-          ),
+          icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+          image: "/assets/images/customization-img.png",
+          btnLink: "/",
         },
         {
-          title: "Customer Focus",
-          description:
+          imageSide: "right",
+          titles: "Customer Focus",
+          content:
             "The framework enhances customer relationship management by measuring key aspects such as customer satisfaction, loyalty, and retention. This focus ultimately improves service delivery and strengthens client relationships.",
-          content: (
-              <Image
-              src="/assets/images/customization-img.png"
-              width={1000}  height={200}
-              className="w-full"
-              alt="linear board demo"
-            />
-          ),
+          icon: "/assets/images/icons/manufacturing/streamline_target.png",
+          image: "/assets/images/customization-img.png",
+          btnLink: "/",
         },
         {
-          title: "Risk Management",
-          description:
+          imageSide: "left",
+          titles: "Risk Management",
+          content:
             "This tool assesses financial risks and ensures compliance with regulations, allowing banks to maintain stability and proactively mitigate potential threats.",
-          content: (
-              <Image
-              src="/assets/images/customization-img.png"
-              width={1000}  height={200}
-              className="w-full"
-              alt="linear board demo"
-            />
-          ),
+          icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+          image: "/assets/images/customization-img.png",
+          btnLink: "/",
         },
         {
-          title: "Financial Sustainability",
-          description:
+          imageSide: "right",
+          titles: "Financial Sustainability",
+          content:
             "By measuring key metrics such as Return on Assets (ROA) and Net Interest Margin (NIM), the Balanced Scorecard helps banks ensure long-term financial health and growth.",
-          content: (
-              <Image
-              src="/assets/images/customization-img.png"
-              width={1000}  height={200}
-              className="w-full"
-              alt="linear board demo"
-            />
-          ),
+          icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+          image: "/assets/images/customization-img.png",
+          btnLink: "/",
         },
+       
       ],
+     
+     
       counterTitle:{
         title: "Driving Efficiency and Performance Gains with Data Point",
       },
@@ -92,25 +80,25 @@ const bankData = {
       cardData:[
         {
           title: "Consistent Decision Making",
-          icon: "/assets/images/manufacturing/execute-strategies.png",
+          icon: "/assets/images/manufacturing/strategic-planning-card.png",
           content:
             "Make the right decisions, every single time. Easily analyse perspectives and their Key Performance Indicators to make the correct decisions. Let everyone be well informed about the decisions that are being made.",
         },
         {
           title: "Easy Collaboration of Data",
-          icon: "/assets/images/manufacturing/strategic-plan.png",
+          icon: "/assets/images/manufacturing/strategic-planning-card.png",
           content:
             "Collaborate data from different departments with much ease. Consolidated view of departmental data helps top level management make better decisions. Take data-driven decisions and make strategic planning and management is easier.",
         },
         {
           title: "Monitor and Enhance Performance",
-          icon:  "/assets/images/manufacturing/data-insights.png",
+          icon: "/assets/images/manufacturing/strategic-planning-card.png",
           content:
             "Monitor and enhance business performance using financial and non-financial data. By measuring performance, the organisation will realise where they are now and what needs to be done to achieve the long or short term goals.",
         },
         {
           title: "Auto-Generated Reports",
-          icon: "/assets/images/manufacturing/productionandsales.png",
+          icon: "/assets/images/manufacturing/strategic-planning-card.png",
           content:
             "Download digital reports and summaries in a click! Gather meaningful insights, to improve business performance. Precise and detailed reports to align actions with organisational strategy goals.",
         },       

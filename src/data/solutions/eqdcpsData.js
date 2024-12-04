@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const eqdcpsData = {
   bannerData: {
-    title: "Elevate your Strategy with",
-    HighlightTitle: "EQDCPS Visual Boards ",
+    title: "Elevate your Strategy with EQDCPS Visual Boards ",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Use the EQDCPS framework to drive sustainable improvements in your organisation. ",
   },
@@ -31,92 +30,68 @@ const eqdcpsData = {
         "Streamline delivery processes and reduce costs for better profitability. ",
     },
   ],
-
-  StickyScrollContentTitle: {
-    title: "Understanding the EQDCPS Metrics ",
+  leftRightDataTitles: {
+    title: "Understanding the EQDCPS Metrics",
     content:
-      "EQDCPS framework encompasses essential metrics for holistic improvement.  ",
+      "EQDCPS framework encompasses essential metrics for holistic improvement. ",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Environment",
-      description:
+      imageSide: "left",
+      titles: "Environment",
+      content:
         "Monitor environmental impact and implement sustainable practices. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Quality",
-      description:
-        "Maintain high-quality standards to ensure customer loyalty.  ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Quality",
+      content:
+        "Maintain high-quality standards to ensure customer loyalty.",
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Delivery",
-      description: "Track delivery timelines to optimise supply chain effectiveness.  ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Delivery ",
+      content:
+        "Track delivery timelines to optimise supply chain effectiveness. ",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Cost",
-      description:
+      imageSide: "right",
+      titles: "Cost",
+      content:
         "Manage costs effectively to improve financial performance.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "People",
-      description:
-        " Evaluate workforce engagement and drive productivity. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "People ",
+      content:
+        "Evaluate workforce engagement and drive productivity.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Site Action",
-      description:
-        "Implement site-specific initiatives for operational excellence.  ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Site Action ",
+      content:
+        "Implement site-specific initiatives for operational excellence.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
-       
   ],
+  
   counterTitle: {
     title: "Boosting Performance with EQDCPS Boards ",
   },

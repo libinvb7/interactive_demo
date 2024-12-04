@@ -4,12 +4,13 @@ import AccordionSection from "@/components/industries/AccordionSection";
 import ManufacturingCompaniesUseBalancedScorecard from "@/components/industries/ManufacturingCompaniesUseBalancedScorecard";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
-import Banner from "@/components/industries/Banner";
+import Banner from "@/components/common/Banner";
 import CtaTwo from "@/components/industries/CtaTwo";
 import FormIndustry from "@/components/industries/Form";
 import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
 import React from "react";
 import fmcgData from "../../data/industires/fmcgData";
+import LeftRight from "@/components/common/LeftRight";
 
 const page = () => {
   return (
@@ -20,12 +21,9 @@ const page = () => {
         desc={fmcgData.bannerData?.desc}
         imageUrl={fmcgData.bannerData?.Image}
       />
-      <ClientCarousel />
-      <StickyScrollReveal
-        title={fmcgData.StickyScrollContentTitle?.title}
-        desc={fmcgData.StickyScrollContentTitle?.content}
-        content={fmcgData.StickyScrollContent}
-      />
+      <ClientCarousel customClass="mt-20"/>
+      <LeftRight mainTitle={fmcgData.leftRightDataTitles.title} mainData={fmcgData.leftRightData} desc={fmcgData.leftRightDataTitles.content}/>
+
       <VideoSection
         title="Experience the power of Data Point in action"
         desc="Use Data Point’s advanced Balanced Scorecard to drive Lean practices in electronics manufacturing, streamline operations, and track key KPIs for ongoing improvement and productivity."

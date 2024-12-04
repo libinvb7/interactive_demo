@@ -96,6 +96,7 @@ const FeatureSection = () => {
         end: "+=1500px",
         scrub: 3,
         pin: true,
+        pinSpacing: true, 
         onUpdate: (self) => {
           const newActiveTab = Math.round(self.progress * (tabs.length - 1));
           setActiveTab(newActiveTab);
@@ -103,21 +104,22 @@ const FeatureSection = () => {
       });
 
       return () => {
-        scrollTrigger.kill();
+        scrollTrigger.kill(); 
       };
     }
   }, [tabs.length]);
 
   return (
-    <section className="mt-20 px-6 relative z-[10]" ref={containerRef}>
-      <div className="container">
+    <section className="mt-20 px-6 relative z-[10] "  >
+      {/* <div className="spacer" style={{height: "130px"}}></div> */}
+      <div className="container  " ref={containerRef} >
         <div className="flex justify-center items-center gap-10">
           <h2 className="text-primary mb-10 lg:max-w-[700px]">
             See how Data Point unifies strategic insights across your organisation
           </h2>
         </div>
 
-        <div className="glass-bg p-10">
+        <div className="glass-white rounded-2xl custom-shadow p-10 " >
           <div className="lg:flex gap-4">
             <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
 

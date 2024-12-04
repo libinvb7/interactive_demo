@@ -3,7 +3,6 @@ import Image from "next/image";
 const sqdcData = {
   bannerData: {
     title: "  SQDC Lean Visual Management Boards ",
-    HighlightTitle: "",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Plan your strategic development with Digital SQDC visual management boards. Track your daily management process by measuring how the process is performing against Safety, Quality, Delivery and Cost.  ",
   },
@@ -31,68 +30,51 @@ const sqdcData = {
         "Maintain high product quality and improve delivery times to meet customer expectations efficiently.  ",
     },
   ],
-
-  StickyScrollContentTitle: {
-    title:
-      "Breaking Down SQDC Metrics ",
+  leftRightDataTitles: {
+    title: "Breaking Down SQDC Metrics",
     content:
-      "Each metric plays a critical role in achieving operational excellence. ",
+      "Each metric plays a critical role in achieving operational excellence.",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Safety",
-      description:
-        "Track workplace incidents and ensure a secure environment for all employees. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Safety",
+      content:
+        "Track workplace incidents and ensure a secure environment for all employees.",
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Quality",
-      description:
-        " Improve product quality and minimise defects to maintain high standards. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Quality",
+      content:
+        "Improve product quality and minimise defects to maintain high standards.",
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Delivery",
-      description:
+      imageSide: "left",
+      titles: "Delivery ",
+      content:
         "Increase on-time delivery rates to meet customer expectations consistently. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Cost",
-      description:
-        "Control operational expenses and reduce waste to optimise profitability. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Cost ",
+      content:
+        "Control operational expenses and reduce waste to optimise profitability.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
-
+    
   ],
+ 
   counterTitle: {
     title: "Boosting Performance with SQDC Boards",
   },

@@ -35,7 +35,7 @@ const CountItem = ({ title, end, }) => {
   }, [end, 3]);
 
   return (
-    <div className="counter-border relative w-full md:w-1/3  flex justify-center items-center  flex-col">
+    <div className="counter-border relative w-full md:w-1/3  flex justify-center items-center  flex-col py-5 lg:py-0">
       <div>
         <h2
           className="font-bold text-5xl bg-gradient-to-r from-[#A9EBFF] to-[#8FFFFD] bg-clip-text text-transparent"
@@ -44,7 +44,7 @@ const CountItem = ({ title, end, }) => {
           0%
         </h2>
       </div>
-      <h3 className="text-white text-xl pt-3 max-w-60 px-1">{title}</h3>
+      <h3 className="text-white text-lg lg:text-xl pt-3 max-w-60 px-1">{title}</h3>
     </div>
   );
 };

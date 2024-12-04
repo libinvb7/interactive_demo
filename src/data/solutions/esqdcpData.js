@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const esqdcpData = {
   bannerData: {
-    title: " ESQDCP Board:",
-    HighlightTitle: "Optimising Performance with an Environmental Focus ",
+    title: " ESQDCP Board: Optimising Performance with an Environmental Focus ",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "rack and improve performance across Environment, Safety, Quality, Delivery, Cost, and People with a powerful visual management tool. ",
   },
@@ -32,90 +31,69 @@ const esqdcpData = {
     },
   ],
 
-  StickyScrollContentTitle: {
-    title: "Monitoring and Managing Key ESQDCP Metrics ",
+  leftRightDataTitles: {
+    title:
+      "Monitoring and Managing Key ESQDCP Metrics",
     content:
-      "Gain insights across Environment, Safety, Quality, Delivery, Cost, and People in a single view. ",
+      "Gain insights across Environment, Safety, Quality, Delivery, Cost, and People in a single view.",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Environment",
-      description:
-        "Measure and track environmental impact and sustainability efforts. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Environment",
+      content:
+        "Measure and track environmental impact and sustainability efforts.",
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Safety",
-      description:
-        "Track safety incidents and enhance workplace safety protocols. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Safety",
+      content:
+        "Track safety incidents and enhance workplace safety protocols.",
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Quality",
-      description: "Improve product quality and customer satisfaction through real-time monitoring. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      simageSideide: "left",
+      titles: "Quality ",
+      content:
+        "Improve product quality and customer satisfaction through real-time monitoring. ",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Delivery",
-      description:
-        "Measure on-time delivery performance to enhance supply chain efficiency. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Delivery",
+      content:
+        "Measure on-time delivery performance to enhance supply chain efficiency.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Cost",
-      description:
-        "Evaluate workforce productivity and engagement. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Cost",
+      content:
+        "Evaluate workforce productivity and engagement.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "People",
-      description:
-        "Boost workforce productivity and engagement through focused tracking. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "People",
+      content:
+        "Boost workforce productivity and engagement through focused tracking.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
   ],
+
   counterTitle: {
     title: "Boosting Performance with ESQDCP Boards",
   },

@@ -31,7 +31,7 @@ const StorylaneEmbed = () => {
   }, []);
 
   return (
-    <div ref={embedRef} style={{ minHeight: '400px' }}>
+    <div ref={embedRef} >
       <Script src="https://js.storylane.io/js/v2/storylane.js" strategy="lazyOnload" />
       {isInView && (
         <div

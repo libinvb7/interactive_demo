@@ -12,16 +12,15 @@ import SolutionCta from "@/components/solutions/SolutionCta";
 import SolutionsCard from "@/components/solutions/SolutionsCardSection";
 import AccordionSection from "@/components/solutions/AccordionSection";
 import eqdcpsData from "../../data/solutions/eqdcpsData";
+import Banner from "@/components/common/Banner";
+import LeftRight from "@/components/common/LeftRight";
 
 const page = () => {
   return (
-    <div className="bg-solutions-home">
-      <BackgroundBoxesDemo
-        title={eqdcpsData.bannerData?.title}
-        highlightedTitle={eqdcpsData.bannerData?.HighlightTitle}
-        desc={eqdcpsData.bannerData?.desc}
-      />
-      <VideoSection />
+    <div >
+      <Banner title={eqdcpsData.bannerData?.title}
+        desc={eqdcpsData.bannerData?.desc}/>
+      <VideoSection customClass="py-20" />
       <ClientCarousel />
       <SolutionsCard
         title={eqdcpsData.cardSectionTitle?.title}
@@ -29,10 +28,11 @@ const page = () => {
         cardData={eqdcpsData.cardData}
       />
       <SolutionCta />
-      <StickyScrollReveal
-        title={eqdcpsData.StickyScrollContentTitle?.title}
-        desc={eqdcpsData.StickyScrollContentTitle?.content}
-        content={eqdcpsData.StickyScrollContent}
+    
+      <LeftRight
+        mainTitle={eqdcpsData.leftRightDataTitles.title}
+        mainData={eqdcpsData.leftRightData}
+        desc={eqdcpsData.leftRightDataTitles.content}
       />
       <Counter
         counterTitle={eqdcpsData.counterTitle?.title}

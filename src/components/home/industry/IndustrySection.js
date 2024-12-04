@@ -72,7 +72,7 @@ const cardData=[
 
 const IndustrySection = () => {
   return (
-    <section className="px-6 industry-section pt-36 mt-20 "  >
+    <section className="px-6 industry-section pt-36 "  >
       
       <div className="container">
         <div className="flex justify-center items-center gap-10">
@@ -85,7 +85,7 @@ const IndustrySection = () => {
         <div className="flex flex-wrap justify-center">
           {
             cardData.map((data,index)=>(
-<div className="w-full lg:w-1/3 md:w-1/2 s mb-4 flex justify-center items-center mb-16 " key={index}>
+<div className="w-full lg:w-1/3 md:w-1/2  flex justify-center items-center p-5 xxl:p-10" key={index}>
     <Card data={data}/>
   </div>
 

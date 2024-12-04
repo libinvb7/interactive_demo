@@ -18,16 +18,16 @@ const Accordion = ({ items }) => {
           className="accordion-item py-10 border-b border-b-[#115991]/30 cursor-pointer"
         >
           <div
-            className="flex justify-between items-center gap-3"
+            className="flex justify-between items-start gap-3"
             onClick={() => toggleAccordion(index)}
           >
             <h2 className="accordion-header text-lg lg:text-2xl font-bold max-w-[90%]">
               {item.title}
             </h2>
             {index === activeIndex ? (
-              <BsArrowUpCircle className="text-6xl lg:text-4xl text-[#115991] duration-300" />
+              <BsArrowUpCircle className=" md:text-xl lg:text-4xl  text-[#115991] duration-300" />
             ) : (
-              <BsArrowDownCircle className="text-6xl lg:text-4xl text-[#115991] duration-300" />
+              <BsArrowDownCircle className="md:text-xl lg:text-4xl text-[#115991] duration-300" />
             )}
           </div>
           <div

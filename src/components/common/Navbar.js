@@ -11,11 +11,11 @@ const Navbar = () => {
     useEffect(() => {
       const handleScroll = () => {
         if (window.scrollY > 100) {
-          setNavbarColor('#fff'); // Change to your desired color
+          setNavbarColor('#fff'); 
           setColor(' #115991')
           setborderColor(' border-white')
         } else {
-          setNavbarColor('transparent'); // Initial color
+          setNavbarColor('transparent'); 
           setColor(' #fff')
           setborderColor(' border-[#115991]')
         }
@@ -29,7 +29,7 @@ const Navbar = () => {
       };
     }, []);
   return (
-    <section className='  text-3xl fixed top-0 py-3 z-[99] w-[100%]' style={{ backgroundColor: navbarColor, transition: 'background-color 0.3s ease' }}>
+    <section className='  text-3xl fixed top-0 py-3 z-[99] w-full' style={{ backgroundColor: navbarColor, transition: 'background-color 0.3s ease' }}>
         <div className='container mx-auto '>
         <div className='flex justify-between items-center '>
             <div>

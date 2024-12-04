@@ -5,23 +5,20 @@ import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import CtaTwo from "@/components/industries/CtaTwo";
 import FormIndustry from "@/components/industries/Form";
-import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
-import { BackgroundBoxesDemo } from "@/components/solutions/BackgroundBoxesDemo";
-import LearnMore from "@/components/solutions/LearnMore";
 import SolutionCta from "@/components/solutions/SolutionCta";
 import SolutionsCard from "@/components/solutions/SolutionsCardSection";
 import AccordionSection from "@/components/solutions/AccordionSection";
 import fcilData from "../../data/solutions/fcilData";
+import Banner from "@/components/common/Banner";
+import LeftRight from "@/components/common/LeftRight";
 
 const page = () => {
   return (
-    <div className="bg-solutions-home">
-      <BackgroundBoxesDemo
-        title={fcilData.bannerData?.title}
-        highlightedTitle={fcilData.bannerData?.HighlightTitle}
-        desc={fcilData.bannerData?.desc}
-      />
-      <VideoSection />
+    <div className="">
+      <Banner title={fcilData.bannerData?.title}
+        desc={fcilData.bannerData?.desc}/>
+   
+      <VideoSection customClass="mt-20"  />
       <ClientCarousel />
       <SolutionsCard
         title={fcilData.cardSectionTitle?.title}
@@ -29,10 +26,11 @@ const page = () => {
         cardData={fcilData.cardData}
       />
       <SolutionCta />
-      <StickyScrollReveal
-        title={fcilData.StickyScrollContentTitle?.title}
-        desc={fcilData.StickyScrollContentTitle?.content}
-        content={fcilData.StickyScrollContent}
+     
+         <LeftRight
+        mainTitle={fcilData.leftRightDataTitles.title}
+        mainData={fcilData.leftRightData}
+        desc={fcilData.leftRightDataTitles.content}
       />
       <Counter
         counterTitle={fcilData.counterTitle?.title}

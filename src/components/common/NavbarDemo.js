@@ -6,26 +6,49 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export function NavbarDemo() {
-  return (
-    <div className="relative w-full flex items-center justify-center">
-      <div className="container">
-        <div className="flex">
-        <div className="w-1/3">
+  const [navbarColor, setNavbarColor] = useState("transparent");
 
-<Link href="/">
-  <Image
-    src="/assets/images/Datapoint_logo.png"
-    className="bg-white rounded-lg p-2"
-    alt="data point logo"
-    width={150}
-    height={50}
-  />
-</Link>
-</div>
-<div  className="w-1/3">
-<Navbar />
-</div>
-<div className="w-1/3" ></div>
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setNavbarColor("#fff");
+      } else {
+        setNavbarColor("transparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  return (
+    <div
+      className="fixed top-0 py-3 z-[99] flex items-center justify-center  top-0 w-full "
+      style={{
+        backgroundColor: navbarColor,
+        transition: "background-color 0.3s ease",
+      }}
+    >
+      <div className="container">
+        <div className="flex items-center">
+          <div className="w-1/3">
+            <Link href="/">
+              <Image
+                src="/assets/images/Datapoint_logo.png"
+                className="bg-white rounded-lg p-2"
+                alt="data point logo"
+                width={150}
+                height={50}
+              />
+            </Link>
+          </div>
+          <div className="w-1/3">
+            <Navbar />
+          </div>
+          <div className="w-1/3"></div>
         </div>
       </div>
     </div>
@@ -35,7 +58,12 @@ export function NavbarDemo() {
 function Navbar({ className }) {
   const [active, setActive] = useState(null);
   return (
-    <div className={cn("w-fit relative top-0 inset-x-0 w-full mx-auto z-50 hidden md:block" , className)}>
+    <div
+      className={cn(
+        "w-fit relative top-0 inset-x-0 w-full mx-auto z-50 hidden md:block",
+        className
+      )}
+    >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
@@ -83,8 +111,6 @@ function Navbar({ className }) {
               src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
-           
-            
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Solutions">
@@ -113,43 +139,43 @@ function Navbar({ className }) {
               src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
-             <ProductItem
+            <ProductItem
               title="SQDCL"
               href="/sqdcl-board-visual-management-tool"
               src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
-             <ProductItem
+            <ProductItem
               title="SQDCPSI"
               href="/sqdcpsi-visual-management-board-software"
               src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
-             <ProductItem
+            <ProductItem
               title="EQDCPS"
               href="/eqdcps-board-strategy-plan-software"
               src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
-             <ProductItem
+            <ProductItem
               title="SheQCPLDCPS"
               href="/sheqcpldcps-board-visual-strategy"
               src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
-             <ProductItem
+            <ProductItem
               title="SQDCM"
               href="/sqdcm-visual-management-board"
               src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
-             <ProductItem
+            <ProductItem
               title="FCIL"
               href="/fcil-balanced-scorecard"
               src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
-             <ProductItem
+            <ProductItem
               title="SQDC"
               href="sqdc-visual-management-huddle-board"
               src="https:/assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"

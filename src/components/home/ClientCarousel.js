@@ -13,11 +13,11 @@ const clientImages = [
 // Duplicate the images for seamless looping
 const loopingClientImages = [...clientImages, ...clientImages];
 
-export const ClientCarousel = () => {
+export const ClientCarousel = ({customClass}) => {
 
 
   return (
-    <section className="mt-20 px-6 overflow-x-hidden">
+    <section className={`  px-6 overflow-x-hidden ${customClass || ""}`}>
       <div className="container">
         <div className="flex justify-center items-center">
           <h2 className="text-primary mb-10 lg:max-w-[600px]">

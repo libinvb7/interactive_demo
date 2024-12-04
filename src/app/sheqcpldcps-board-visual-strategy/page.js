@@ -5,23 +5,21 @@ import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import CtaTwo from "@/components/industries/CtaTwo";
 import FormIndustry from "@/components/industries/Form";
-import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
-import { BackgroundBoxesDemo } from "@/components/solutions/BackgroundBoxesDemo";
 import LearnMore from "@/components/solutions/LearnMore";
 import SolutionCta from "@/components/solutions/SolutionCta";
 import SolutionsCard from "@/components/solutions/SolutionsCardSection";
 import AccordionSection from "@/components/solutions/AccordionSection";
 import sheqcpldcpsData from "../../data/solutions/sheqcpldcpsData";
+import Banner from "@/components/common/Banner";
+import LeftRight from "@/components/common/LeftRight";
 
 const page = () => {
   return (
     <div className="bg-solutions-home">
-      <BackgroundBoxesDemo
-        title={sheqcpldcpsData.bannerData?.title}
-        highlightedTitle={sheqcpldcpsData.bannerData?.HighlightTitle}
-        desc={sheqcpldcpsData.bannerData?.desc}
-      />
-      <VideoSection />
+      <Banner title={sheqcpldcpsData.bannerData?.title}
+        desc={sheqcpldcpsData.bannerData?.desc}/>
+     
+      <VideoSection customClass="lg:py-20 py-10"   />
       <ClientCarousel />
       <SolutionsCard
         title={sheqcpldcpsData.cardSectionTitle?.title}
@@ -29,10 +27,11 @@ const page = () => {
         cardData={sheqcpldcpsData.cardData}
       />
       <SolutionCta />
-      <StickyScrollReveal
-        title={sheqcpldcpsData.StickyScrollContentTitle?.title}
-        desc={sheqcpldcpsData.StickyScrollContentTitle?.content}
-        content={sheqcpldcpsData.StickyScrollContent}
+     
+        <LeftRight
+        mainTitle={sheqcpldcpsData.leftRightDataTitles.title}
+        mainData={sheqcpldcpsData.leftRightData}
+        desc={sheqcpldcpsData.leftRightDataTitles.content}
       />
       <Counter
         counterTitle={sheqcpldcpsData.counterTitle?.title}

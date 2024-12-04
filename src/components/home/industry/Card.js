@@ -10,17 +10,20 @@ const Card = ({ data }) => {
   const { title, content, icon, link } = data;
 
   return (
-    <div className="group  industry-card rounded-lg max-w-[350px] md:h-[450px] lg:h-[460px] p-5 relative cursor-pointer overflow-clip  bg-white hover:bg-gradient-to-r hover:scale-105 shadow-lg p-5 lg:p-5 w-full text-left rounded-lg mb-3 transition duration-300 ">
-      <Image
+    <div className="group  industry-card rounded-3xl   p-5 relative cursor-pointer overflow-clip  bg-white hover:bg-gradient-to-r hover:scale-105 shadow-lg p-5 lg:p-5 w-full text-left   transition duration-300 ">
+     <div className="relative">
+      <div className="bg-gradient-to-t from-[#001F39] to-[#001F39]/10 absolute bottom-0 w-full h-28 z-20 rounded-2xl"> </div>
+     <Image
         src={icon}
-        width={400}
-        className="py-1 relative z-10  rounded-lg"
+        width={800}
+        className=" relative z-10  rounded-2xl"
         height={80}
         alt="banner"
       />
-      <h2 className="text-card absolute top-[170px] px-5 z-10 text-white">
+      <h2 className="text-card absolute bottom-0 px-5 mb-2 z-30 text-white">
         {title}
       </h2>
+     </div>
       <div className="flex flex-col items-start pt-3">
         <ul>
           {content.map((listitem, index) => (

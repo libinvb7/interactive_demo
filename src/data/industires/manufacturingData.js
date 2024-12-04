@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const manufacturingData = {
   bannerData: {
-    title: " Optimise your Factory Operations with ",
-    HighlightTitle: "Manufacturing Balanced Scorecard",
+    title: " Optimise your Factory Operations with Manufacturing Balanced Scorecard",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Use comprehensive Manufacturing Balanced Scorecard software with best Manufacturing KPI Dashboards to improve operational efficiency, track KPIs, and enhance production management for sustainable growth. ",
   },
@@ -13,60 +12,6 @@ const manufacturingData = {
     content:
       "Data Point Balanced Scorecard framework is the ideal strategic management tool that helps the manufacturers align their objectives with KPIs",
   },
-  StickyScrollContent: [
-    {
-      title: "KPI software",
-      description:
-        "Data Point enables manufacturers to easily track and analyse Manufacturing Key Performance Indicators like OEE (Overall Equipment Effectiveness), ensuring alignment with strategic goals and operational efficiency.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
-    },
-    {
-      title: "Real time changes",
-      description:
-        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
-    },
-    {
-      title: "Version control",
-      description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
-    },
-    {
-      title: "Running out of content",
-      description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
-    },
-  ],
   counterData:[
     {
       title: "Faster strategy execution ",
@@ -90,37 +35,37 @@ const manufacturingData = {
   cardData: [
     {
       title: "Achieve strategic planning",
-      icon: "/assets/images/manufacturing/execute-strategies.png",
+      icon: "/assets/images/manufacturing/strategic-planning-card.png",
       content:
         "Data Point enhances organisational performance by aligning KPIs with strategic objectives across various levels, fostering a high-performance culture",
     },
     {
       title: "Execute strategies effectively",
-      icon: "/assets/images/manufacturing/strategic-plan.png",
+      icon: "/assets/images/manufacturing/strategic-planning-card.png",
       content:
         "Implement and assess your initiatives using the Digital Balanced Scorecard to ensure alignment with strategic goals.",
     },
     {
       title: "Transform data into insights",
-      icon: "/assets/images/manufacturing/data-insights.png",
+      icon: "/assets/images/manufacturing/strategic-planning-card.png",
       content:
         "Analyse departmental data effortlessly to gain valuable insights with automated reports, ensuring you stay on top of your KPIs.",
     },
     {
       title: "Optimise production and sales",
-      icon: "/assets/images/manufacturing/productionandsales.png",
+      icon: "/assets/images/manufacturing/strategic-planning-card.png",
       content:
         "Continuously monitor KPIs to enhance production planning and sales, enabling organizations to anticipate demand and fulfill it promptly.",
     },
     {
       title: "Enhance customer satisfaction",
-      icon:  "/assets/images/manufacturing/customer.png",
+      icon:  "/assets/images/manufacturing/strategic-planning-card.png",
       content:
         "Visualise strategy maps and analyse KPIs to align processes with strategic goals, focusing on metrics like on-time delivery and quality that matter most to customers",
     },
     {
       title: "Customisable digital reportsd",
-      icon: "/assets/images/manufacturing/digital-reports.png",
+      icon: "/assets/images/manufacturing/strategic-planning-card.png",
       content:
         "Access a variety of digital reports tailored to monitor overall performance, generating insights from real-time data.",
     },
@@ -152,6 +97,42 @@ const manufacturingData = {
         "Data Point offers flexible options for customising KPIs and metrics that align with the specific challenges and goals of your manufacturing operations. This ensures that your Balanced Scorecard is effectively designed to enhance performance and drive strategic success.",
     },
   ],
+  leftRightDataTitles:
+    {title: " Why is Data Point Balanced Scorecard the right choice for you?"},
+   leftRightData: [
+    {   
+        "imageSide":"left",
+        "titles":"KPI Software",
+        "content":"Data Point enables manufacturers to easily track and analyse Manufacturing Key Performance Indicators like OEE (Overall Equipment Effectiveness), ensuring alignment with strategic goals and operational efficiency.",
+        "icon":"/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+        "image":"/assets/images/customization-img.png",
+        "btnLink":"/"
+    },
+    {   
+        "imageSide":"right",
+        "titles":"Strategic Alignment",
+        "content":"Align your operational goals with the strategic vision and break them into actionable objectives, while ensuring everyone is moving towards the same organisational goals.",
+        "icon":"/assets/images/icons/manufacturing/streamline_target.png",
+        "image":"/assets/images/customization-img.png",
+        "btnLink":"/"
+    },
+    {   
+        "simageSideide":"left",
+        "titles":"Operational Efficiency",
+        "content":"Optimise manufacturing processes by integrating the Lean manufacturing tools to reduce waste and downtime, driving significant improvements in productivity and operational performance.",
+        "icon":"/assets/images/icons/manufacturing/carbon_operations-field.png",
+        "image":"/assets/images/customization-img.png",
+        "btnLink":"/"
+    },
+    {   
+        "imageSide":"right",
+        "titles":"Quality and Customer Satisfaction",
+        "content":"Enhance product quality and customer satisfaction through targeted KPIs, improving overall competitiveness in the market.",
+        "icon":"/assets/images/icons/manufacturing/streamline_star-badge.png",
+        "image":"/assets/images/customization-img.png",
+        "btnLink":"/"
+    }
+]
 };
 
 export default manufacturingData;

@@ -1,5 +1,4 @@
-// src/components/home/Feature/Tabs.js
-import React from 'react';
+
 
 const Tabs = ({ tabs, activeTab, setActiveTab }) => {
   return (
@@ -7,10 +6,10 @@ const Tabs = ({ tabs, activeTab, setActiveTab }) => {
       {tabs.map((tab, index) => (
         <div
           key={index}
-          className={`px-4 py-5 mb-3 bg-white tab-shadow rounded-lg cursor-pointer ${
+          className={`px-4 py-5 mb-3 bg-white tab-shadow rounded-lg  ${
             index === activeTab ? "btn btn-primary" : ""
           }`}
-          onClick={() => setActiveTab(index)}
+          // onClick={() => setActiveTab(index)}
         >
           <div className={`flex gap-3 ${index === activeTab ? "active" : ""}`}>
             <div

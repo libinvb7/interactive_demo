@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const sqdcpsiData = {
   bannerData: {
-    title: "Enhance Performance with ",
-    HighlightTitle: "SQDCPSI Visual Management Boards ",
+    title: "Enhance Performance with SQDCPSI Visual Management Boards",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Streamline operations and improve accountability across Safety, Quality, Delivery, Cost, People, Site Action, and Inventory metrics. ",
   },
@@ -31,105 +30,77 @@ const sqdcpsiData = {
         " Assess employee productivity and morale to foster a motivated workforce.  ",
     },
   ],
-
-  StickyScrollContentTitle: {
-    title: "Understanding the SQDCPSI Metrics ",
+  leftRightDataTitles: {
+    title: "Understanding the SQDCPSI Metrics",
     content:
-      "Discover how each metric contributes to operational excellence.  ",
+      "Discover how each metric contributes to operational excellence. ",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Safety",
-      description:
-        "Track and improve workplace safety measures",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Safety",
+      content:
+        "Track and improve workplace safety measures ",
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Quality",
-      description:
-        "Monitor and enhance product quality consistently. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Quality",
+      content:
+        "Monitor and enhance product quality consistently.",
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Delivery",
-      description: "Improve delivery times to meet customer expectations. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Delivery ",
+      content:
+        "Improve delivery times to meet customer expectations. ",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Cost",
-      description:
-        "Streamline costs to enhance overall profitability. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Cost",
+      content:
+        "Streamline costs to enhance overall profitability.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "People",
-      description:
+      imageSide: "left",
+      titles: "People ",
+      content:
         "Foster a motivated and productive workforce. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Site Action",
-      description:
+      imageSide: "right",
+      titles: "Site Action ",
+      content:
         "Facilitate rapid responses to site-level issues. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Inventory",
-      description:
+      imageSide: "left",
+      titles: "Inventory ",
+      content:
         "Optimise inventory management to reduce waste.",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
-   
   ],
+ 
   counterTitle: {
     title: "Boosting Performance with SQDCL Boards ",
   },

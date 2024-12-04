@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const sqdcmData = {
   bannerData: {
-    title: "SQDCM Visual Management Boards ",
-    HighlightTitle: "for Continuous Improvement ",
+    title: "SQDCM Visual Management Boards for Continuous Improvement ",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "As a visual management board, SQDCM aids in monitoring and enhancing manufacturing performance. The board provides a visual representation of performance metrics across five key areas: Safety, Quality, Delivery, Cost, and Morale. A SQDCM board enables teams to identify issues, track progress, and implement corrective actions swiftly. SQDCM boards promote transparency, accountability, and continuous improvement across all aspects of operations. ",
   },
@@ -31,79 +30,61 @@ const sqdcmData = {
         "Boost morale by creating a safer work environment, reducing stress caused by defects or delays, and fostering a culture of continuous improvement.",
     },
   ],
-
-  StickyScrollContentTitle: {
-    title: "Key Metrics in the SQDCM Framework ",
+  leftRightDataTitles: {
+    title: "Key Metrics in the SQDCM Framework",
     content:
-      "SQDCM framework empowers organisations to measure and improve their key operational metrics. ",
+      "SQDCM framework empowers organisations to measure and improve their key operational metrics.",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Safety",
-      description:
-        " Monitor safety metrics to reduce workplace incidents and create a safer environment.",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "Safety",
+      titles: "Monitor safety metrics to reduce workplace incidents and create a safer environment.",
+      content:
+        "Ensure a safe and compliant workplace while meeting environmental sustainability goals.",
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Quality",
-      description:
-        "Maintain high product and service quality to enhance customer satisfaction.  ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Quality",
+      content:
+        "Maintain high product and service quality to enhance customer satisfaction.",
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Delivery",
-      description: "Track delivery performance and streamline processes to ensure timely customer fulfilment.  ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Delivery ",
+      content:
+        "Track delivery performance and streamline processes to ensure timely customer fulfilment.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Cost",
-      description:
-        "Control operational expenses and optimise processes for better profitability.  ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Cost",
+      content:
+        "Control operational expenses and optimise processes for better profitability.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Morale",
-      description:
-        "Monitor employee engagement and morale to create a supportive and productive workplace culture. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Morale ",
+      content:
+        "Monitor employee engagement and morale to create a supportive and productive workplace culture.",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
-       
+    
   ],
+ 
+ 
   counterTitle: {
     title: "Boosting Performance with SQDCM Boards  ",
   },

@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const sqdclData = {
   bannerData: {
-    title: " SQDCL Board: Driving Operational",
-    HighlightTitle: "Excellence with Visual Management  ",
+    title: " SQDCL Board: Driving Operational Excellence with Visual Management ",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Manage and optimise your Safety, Quality, Delivery, Cost, and Lean metrics with the powerful SQDCL Board. ",
   },
@@ -31,79 +30,69 @@ const sqdclData = {
         "Actionable insights empower teams to implement Lean practices, driving continuous improvement and aligning efforts with organisational objectives.  ",
     },
   ],
-
-  StickyScrollContentTitle: {
-    title: "Comprehensive Tracking Across Safety, Quality, Delivery, Cost, and Lean  ",
+  leftRightDataTitles: {
+    title:
+      "Comprehensive Tracking Across Safety, Quality, Delivery, Cost, and Lean",
     content:
-      "Optimise operations by monitoring and managing key performance areas through the SQDCL Board.  ",
+      "Optimise operations by monitoring and managing key performance areas through the SQDCL Board.",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Safety",
-      description:
-        "Track incidents and promote a safe workplace environment. ",
-      content: (
-        <Image   height={200}
-          src="/   height={200}/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Safety",
+      content:
+        "Track incidents and promote a safe workplace environment.",
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Quality",
-      description:
+      imageSide: "right",
+      titles: "Quality",
+      content:
         "Ensure quality consistency to boost product and service reliability.",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Delivery",
-      description: "Track and improve delivery performance to meet deadlines efficiently.",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      simageSideide: "left",
+      titles: "Delivery ",
+      content:
+        "Track and improve delivery performance to meet deadlines efficiently. ",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Cost",
-      description:
-        "Control operational costs and reduce waste for improved profitability. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Delivery",
+      content:
+        "Measure on-time delivery performance to enhance supply chain efficiency.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Lean",
-      description:
-        "Provide teams with real-time data to implement Lean practices and drive continuous improvement. ",
-      content: (
-        <Image
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Cost",
+      content:
+        "Evaluate workforce productivity and engagement.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
-   
+    {
+      imageSide: "right",
+      titles: "People",
+      content:
+        "Boost workforce productivity and engagement through focused tracking.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
+    },
   ],
+
   counterTitle: {
     title: "Boosting Performance with SQDCL Boards ",
   },

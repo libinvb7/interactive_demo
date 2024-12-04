@@ -13,6 +13,7 @@ const SolutionCard = ({ data }) => {
       className="bg-gradient-to-b from-[#d8f2f3] to-[#c3e7fb] p-3  rounded-xl  relative z-10 transition duration-300 ease-in-out group-hover:translate-x-[20px]"
       width={50}
       height={50}
+      alt="solution card image"
     />
   </div>
      

@@ -3,11 +3,11 @@ import Image from "next/image";
 const CtaTwo = () => {
   return (
     <section className="mt-20">
-      <div className="container">
-        <div className="glass-bg p-5">
-          <div className="flex justify-center items-center gap-10 flex-col  md:flex-row">
-            <div className="w-full w-1/2 p-5">
-              <Image src="/assets/images/manufacturing/M3_integrations_all_integrations.png"  width={150}  height={200} alt="product logo"/>
+      <div className="container ">
+        <div className="custom-shadow glass-bg p-5">
+          <div className="flex justify-center items-center gap-3 lg:gap-10 flex-col  md:flex-row">
+            <div className="w-full w-1/2 p-2 lg:p-5 ">
+              <Image src="/assets/images/manufacturing/M3_integrations_all_integrations.png"  width={500}  height={500} alt="product logo"/>
             </div>
             <div className="w-full w-1/2">
               <h2 className="text-primary text-left py-5 text-5xl">

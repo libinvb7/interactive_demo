@@ -12,16 +12,17 @@ import SolutionCta from "@/components/solutions/SolutionCta";
 import SolutionsCard from "@/components/solutions/SolutionsCardSection";
 import AccordionSection from "@/components/solutions/AccordionSection";
 import sqdclData from "../../data/solutions/sqdclData";
+import Banner from "@/components/common/Banner";
+import LeftRight from "@/components/common/LeftRight";
 
 const page = () => {
   return (
-    <div className="bg-solutions-home">
-      <BackgroundBoxesDemo
+    <div className="">
+      <Banner
         title={sqdclData.bannerData?.title}
-        highlightedTitle={sqdclData.bannerData?.HighlightTitle}
         desc={sqdclData.bannerData?.desc}
       />
-      <VideoSection />
+      <VideoSection customClass="lg:py-20 py-10"  />
       <ClientCarousel />
       <SolutionsCard
         title={sqdclData.cardSectionTitle?.title}
@@ -29,11 +30,12 @@ const page = () => {
         cardData={sqdclData.cardData}
       />
       <SolutionCta />
-      <StickyScrollReveal
-        title={sqdclData.StickyScrollContentTitle?.title}
-        desc={sqdclData.StickyScrollContentTitle?.content}
-        content={sqdclData.StickyScrollContent}
+      <LeftRight
+        mainTitle={sqdclData.leftRightDataTitles.title}
+        mainData={sqdclData.leftRightData}
+        desc={sqdclData.leftRightDataTitles.content}
       />
+
       <Counter
         counterTitle={sqdclData.counterTitle?.title}
         counterData={sqdclData.counterData}
@@ -44,7 +46,7 @@ const page = () => {
         title={sqdclData.formContents?.title}
         desc={sqdclData.formContents?.desc}
       />
-      <AccordionSection accordionData={sqdclData.accordionItems}  />
+      <AccordionSection accordionData={sqdclData.accordionItems} />
     </div>
   );
 };

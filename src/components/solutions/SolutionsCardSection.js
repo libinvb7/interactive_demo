@@ -4,7 +4,7 @@ import SolutionCard from "./SolutionCard";
 
 const SolutionsCard = ({title, desc , cardData}) => {
   return (
-    <section className=" mt-20 px-6  pb-20">
+    <section className=" mt-20 px-6  pb-10 lg:pb-20">
       <div className="container">
         <div className="  flex justify-center items-center  flex-col">
           <div className="max-w-[800px] text-center">

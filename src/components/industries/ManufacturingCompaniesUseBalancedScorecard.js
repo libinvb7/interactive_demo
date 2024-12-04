@@ -4,7 +4,7 @@ import IndustryCard from "@/components/industries/IndustryCard";
 
 const ManufacturingCompaniesUseBalancedScorecard = ({cardData , cardSectionTitle}) => {
   return (
-    <section className="px-6 industry-section pt-52 ">
+    <section className="px-6 industry-section pt-48 ">
       <div className="container">
         <div className="flex justify-center items-center gap-10">
           <h2 className="text-primary text-[#fff] mb-10 lg:max-w-[700px]">

@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const sqdcpsData = {
   bannerData: {
-    title: "Optimise Performance with",
-    HighlightTitle: "SQDCPS Visual Planning Board Software ",
+    title: "Optimise Performance with SQDCPS Visual Planning Board Software",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Drive efficiency with our SQDCPS board, designed to provide a comprehensive view of Safety, Quality, Delivery, Cost, People, and Sustainability metrics.",
   },
@@ -31,89 +30,65 @@ const sqdcpsData = {
         "Empower teams to continuously assess and improve operational performance.",
     },
   ],
-
-  StickyScrollContentTitle: {
-    title: "Track Your KPIs effectively with SQDCPS Metrics",
+  leftRightDataTitles: {
+    title: "Track Your KPIs effectively with SQDCPS Metrics ",
     content:
       "Monitor Safety, Quality, Delivery, Cost, People, and Site Action metrics in one centralised visual board. ",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Safety",
-      description:
-        "Track incidents and ensure a safe working environment. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Safety",
+      content:
+        "Track incidents and ensure a safe working environment.",
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Quality",
-      description:
-        "Monitor product quality and enhance customer satisfaction. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Quality",
+      content:
+        "Monitor product quality and enhance customer satisfaction.",
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Delivery",
-      description: "Measure on-time delivery performance and address any delays. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      simageSideide: "left",
+      titles: "Delivery ",
+      content:
+        "Measure on-time delivery performance and address any delays. ",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Cost",
-      description:
-        " Control and reduce operational costs with real-time tracking. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Cost",
+      content:
+        "Control and reduce operational costs with real-time tracking.",
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "People",
-      description:
+      simageSideide: "left",
+      titles: "People ",
+      content:
         "Evaluate workforce productivity and engagement. ",
-      content: (
-        <Image   height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Site Action",
-      description:
+      imageSide: "right",
+      titles: "Site Action",
+      content:
         "Monitor and manage site-related activities to ensure operational efficiency and compliance. ",
-      content: (
-        <Image
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      icon: "/assets/images/icons/manufacturing/streamline_star-badge.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
   ],
   counterTitle: {

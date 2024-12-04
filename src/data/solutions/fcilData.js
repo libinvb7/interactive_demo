@@ -2,8 +2,7 @@ import Image from "next/image";
 
 const fcilData = {
   bannerData: {
-    title: "FCIL Balanced Scorecard ",
-    HighlightTitle: " A Complete Framework for Operational Excellence ",
+    title: "FCIL Balanced Scorecard A Complete Framework for Operational Excellence ",
     Image: "/assets/images/industries/manufacturing/manufacturing-banner.png",
     desc: "Drive business success by balancing financial health, customer satisfaction, process efficiency, and growth.  ",
   },
@@ -32,51 +31,42 @@ const fcilData = {
     },
   ],
 
-  StickyScrollContentTitle: {
-    title: "Exploring the FCIL Metrics ",
+  leftRightDataTitles: {
+    title: "Exploring the FCIL Metrics",
     content:
-      "Understand how the FCIL Balanced Scorecard enhances business outcomes. ",
+      "Understand how the FCIL Balanced Scorecard enhances business outcomes.",
   },
-  StickyScrollContent: [
+  leftRightData: [
     {
-      title: "Finance",
-      description:
-        "Keep track of revenue, costs, and profitability to make strategic financial decisions. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "left",
+      titles: "Finance",
+      content:
+        "Keep track of revenue, costs, and profitability to make strategic financial decisions.",
+      icon: "/assets/images/icons/manufacturing/clarity_dashboard-outline-badged.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Internal Business Processes",
-      description:
-        "Enhance process efficiency to reduce waste and improve output. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
+      imageSide: "right",
+      titles: "Internal Business Processes",
+      content:
+        "Enhance process efficiency to reduce waste and improve output.",
+      icon: "/assets/images/icons/manufacturing/streamline_target.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
     },
     {
-      title: "Learning & Growth",
-      description: "Support employee development and innovation for sustained business growth. ",
-      content: (
-        <Image  height={200}
-          src="/assets/images/customization-img.png"
-          width={1000}
-          className="w-full"
-          alt="linear board demo"
-        />
-      ),
-    },       
+      imageSide: "left",
+      titles: "Learning & Growth ",
+      content:
+        "Support employee development and innovation for sustained business growth. ",
+      icon: "/assets/images/icons/manufacturing/carbon_operations-field.png",
+      image: "/assets/images/customization-img.png",
+      btnLink: "/",
+    },
+    
   ],
+ 
   counterTitle: {
     title: "Achieve Measurable Results with the FCIL Balanced Scorecard  ",
   },

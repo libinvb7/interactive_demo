@@ -1,13 +1,13 @@
 import StorylaneEmbed from "./StorylaneEmbed";
 import VideoPlayer from "./VideoPlayer ";
 
-const VideoSection = ({title,desc}) => {
+const VideoSection = ({title,desc,customClass}) => {
   return (
     <>
     
-      <section className=" px-6   overflow-x-hidden ">
+      <section className= {`px-6    overflow-x-hidden ${customClass || ""}`} >
         <div className="container">
-          {title?<h2 className="text-primary mb-3">{title}
+          {title?<h2 className="text-primary mb-10">{title}
           </h2>:""}
           {desc?<p className="text-center mb-10 lg:mb-16">{desc}</p>:""}
           

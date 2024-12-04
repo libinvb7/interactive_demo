@@ -15,7 +15,7 @@ const RightChoice = () => {
         <div className="flex flex-col flex-col-reverse md:flex-row">
           <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
             <div>
-              <div className="flex gap-3 items-center">
+              <div className="flex gap-3 items-center ms-3">
                 <div className=" w-fit relative">
                   <div className="bg-gradient-to-b from-[#37BDB0]/10 to-[#0097FE]/10 p-1 px-3 rounded-xl w-fit absolute left-[0px] top-0 w-full h-full z-[1] translate-x-[-18px]  "></div>
                   <div className="bg-gradient-to-b from-[#37BDB0]/15 to-[#0097FE]/15 p-1 px-3 rounded-xl w-fit absolute left-[0px] top-0 w-full h-full z-[-1] translate-x-[-9px]"></div>
@@ -78,7 +78,7 @@ const RightChoice = () => {
           </div>
           <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
             <div>
-              <div className="flex gap-3 items-center">
+              <div className="flex gap-3 items-center ms-3">
               <div className=" w-fit relative">
                   <div className="bg-gradient-to-b from-[#37BDB0]/10 to-[#0097FE]/10 p-1 px-3 rounded-xl w-fit absolute left-[0px] top-0 w-full h-full z-[1] translate-x-[-18px]  "></div>
                   <div className="bg-gradient-to-b from-[#37BDB0]/15 to-[#0097FE]/15 p-1 px-3 rounded-xl w-fit absolute left-[0px] top-0 w-full h-full z-[-1] translate-x-[-9px]"></div>
@@ -125,7 +125,7 @@ const RightChoice = () => {
         <div className="flex flex-col flex-col-reverse md:flex-row">
           <div className="w-full md:w-1/2  mb-4 flex justify-center items-center mb-16">
             <div>
-              <div className="flex gap-3 items-center">
+              <div className="flex gap-3 items-center ms-3">
               <div className=" w-fit relative">
                   <div className="bg-gradient-to-b from-[#37BDB0]/10 to-[#0097FE]/10 p-1 px-3 rounded-xl w-fit absolute left-[0px] top-0 w-full h-full z-[1] translate-x-[-18px]  "></div>
                   <div className="bg-gradient-to-b from-[#37BDB0]/15 to-[#0097FE]/15 p-1 px-3 rounded-xl w-fit absolute left-[0px] top-0 w-full h-full z-[-1] translate-x-[-9px]"></div>

@@ -6,7 +6,7 @@ import { MdHub } from "react-icons/md";
 
 const TemplateSection = () => {
   return (
-    <section className=" mt-20 px-6  pb-20">
+    <section className=" mt-20 px-6 pb-10 lg:pb-20 ">
       <div className="container">
         <div className=" p-10  lg:pt-5 lg:p-4   glass-bg custom-shadow">
           <div className="flex flex-col lg:flex-row  text-center items-center justify-center">

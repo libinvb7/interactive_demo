@@ -62,39 +62,18 @@ export default function Slider() {
           }}
         >
           {/* Dark Overlay */}
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              backgroundColor: "rgba(0, 0, 0, 0.4)", 
-              zIndex: 1,
-            }}
-          ></div>
+          <div className="slider-overlay" ></div>
 
-          {/* Text Content */}
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              color: "#fff",
-              textAlign: "center",
-              zIndex: 2, // Ensure text appears above the overlay
-            }}
-          >
+          <div className="slider-text" >
             <p
-              className="text-center lg:text-left z-10 px-9 py-2 mb-3 inline-block w-fit rounded-[40px] border border-dashed border-white text-white font-bold text-sm lg:text-lg swiper-animation"
+              className="text-center lg:text-left z-10 px-9 py-2 mb-3 inline-block w-fit rounded-[40px] border border-dashed border-white bg-white/20 text-white font-bold text-sm lg:text-lg swiper-animation"
               data-swiper-animation="fadeInDown"
               data-swiper-duration="1000"
             >
               {slide.sub}
             </p>
             <h2
-              className="text-xl  md:text-4xl  lg:text-7xl font-bold py-5 swiper-animation leading-tight"
+              className="text-3xl  md:text-4xl  lg:text-7xl font-bold py-5 swiper-animation leading-tight"
               data-swiper-animation="fadeInUp"
               data-swiper-duration="1000"
             >
@@ -108,7 +87,7 @@ export default function Slider() {
             >
               {slide.desc}
             </p>
-            <div className="flex items-center justify-center gap-3 pt-5">
+            <div className="flex items-center justify-center gap-3 pt-5 flex-col md:flex-row">
               <button className="btn">Get Started</button>
               <button className="btn btn-orange">Book a Demo</button>
             </div>

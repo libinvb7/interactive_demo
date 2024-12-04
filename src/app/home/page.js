@@ -37,8 +37,8 @@ const page = () => {
     <div >
       {/* <Hero /> */}
       <Slider/>
-      <VideoSection title="Experience the power of Data Point in action" />
-      <ClientCarousel />
+      <VideoSection title="Experience the power of Data Point in action" customClass="lg:h-screen"/>
+      <ClientCarousel customClass="pt-20 lg:pt-0"/>
       <FeatureSection />
       <IndustrySection />
       <RightChoice />

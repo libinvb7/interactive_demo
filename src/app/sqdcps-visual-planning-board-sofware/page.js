@@ -13,30 +13,24 @@ import LearnMore from "@/components/solutions/LearnMore";
 import SolutionCta from "@/components/solutions/SolutionCta";
 import SolutionsCard from "@/components/solutions/SolutionsCardSection";
 import AccordionSection from "@/components/solutions/AccordionSection";
-import manufacturingData from "../../data/industires/manufacturingData";
 import sqdcpsData from "../../data/solutions/sqdcpsData";
+import Banner from "@/components/common/Banner";
+import LeftRight from "@/components/common/LeftRight";
 
 const page = () => {
   return (
     <div className="bg-solutions-home">
-      <BackgroundBoxesDemo
-        title={sqdcpsData.bannerData?.title}
-        highlightedTitle={sqdcpsData.bannerData?.HighlightTitle}
-        desc={sqdcpsData.bannerData?.desc}
-      />
-      <VideoSection />
+      <Banner title={sqdcpsData.bannerData?.title}
+        desc={sqdcpsData.bannerData?.desc}/>
+      <VideoSection customClass="lg:py-20 py-10"  />
       <ClientCarousel />
-      <SolutionsCard
-        title={sqdcpsData.cardSectionTitle?.title}
-        desc={sqdcpsData.cardSectionTitle?.desc}
-        cardData={sqdcpsData.cardData}
+      <LeftRight
+        mainTitle={sqdcpsData.leftRightDataTitles.title}
+        mainData={sqdcpsData.leftRightData}
+        desc={sqdcpsData.leftRightDataTitles.content}
       />
       <SolutionCta />
-      <StickyScrollReveal
-        title={sqdcpsData.StickyScrollContentTitle?.title}
-        desc={sqdcpsData.StickyScrollContentTitle?.content}
-        content={sqdcpsData.StickyScrollContent}
-      />
+     
       <Counter
         counterTitle={sqdcpsData.counterTitle?.title}
         counterData={sqdcpsData.counterData}
