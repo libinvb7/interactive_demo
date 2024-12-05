@@ -6,7 +6,7 @@ import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import Banner from "@/components/common/Banner";
 import CtaTwo from "@/components/industries/CtaTwo";
-import FormIndustry from "@/components/industries/Form";
+import FormIndustry from "@/components/common/Form/Form";
 import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
 import React from "react";
 import fmcgData from "../../data/industires/fmcgData";
@@ -19,7 +19,7 @@ const page = () => {
         title={fmcgData.bannerData?.title}
         highlightTitle={fmcgData.bannerData?.HighlightTitle}
         desc={fmcgData.bannerData?.desc}
-        imageUrl={fmcgData.bannerData?.Image}
+        imageUrl={fmcgData.bannerData?.Image} btnView={true}
       />
       <ClientCarousel customClass="mt-20"/>
       <LeftRight mainTitle={fmcgData.leftRightDataTitles.title} mainData={fmcgData.leftRightData} desc={fmcgData.leftRightDataTitles.content}/>

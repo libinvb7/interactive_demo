@@ -7,7 +7,7 @@ import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import Banner from "@/components/common/Banner";
 import CtaTwo from "@/components/industries/CtaTwo";
-import FormIndustry from "@/components/industries/Form";
+import FormIndustry from "@/components/common/Form/Form";
 import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
 import React from "react";
 import bankData from "../../data/industires/bankData";
@@ -20,12 +20,12 @@ const page = () => {
         title={bankData.bannerData?.title}
         highlightTitle={bankData.bannerData?.HighlightTitle}
         desc={bankData.bannerData?.desc}
-        imageUrl={bankData.bannerData?.Image}
+        imageUrl={bankData.bannerData?.Image} btnView={true}
       />
       <ClientCarousel customClass="mt-20"/>
       <LeftRight mainTitle={bankData.leftRightDataTitles.title} mainData={bankData.leftRightData} desc={bankData.leftRightDataTitles.content}/>
 
-      <VideoSection
+      <VideoSection 
         title="Experience the power of Data Point in action"
         desc="Use Data Point’s advanced Balanced Scorecard to drive Lean practices in electronics manufacturing, streamline operations, and track key KPIs for ongoing improvement and productivity."
       />

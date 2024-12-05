@@ -4,7 +4,7 @@ import Counter from "@/components/common/counter/Counter";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import CtaTwo from "@/components/industries/CtaTwo";
-import FormIndustry from "@/components/industries/Form";
+import FormIndustry from "@/components/common/Form/Form";
 import SolutionCta from "@/components/solutions/SolutionCta";
 import SolutionsCard from "@/components/solutions/SolutionsCardSection";
 import AccordionSection from "@/components/solutions/AccordionSection";
@@ -16,7 +16,7 @@ const page = () => {
   return (
     <div className="">
       <Banner title={fcilData.bannerData?.title}
-        desc={fcilData.bannerData?.desc}/>
+        desc={fcilData.bannerData?.desc} btnView={true}/>
    
       <VideoSection customClass="mt-20"  />
       <ClientCarousel />

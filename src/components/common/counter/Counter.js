@@ -12,7 +12,7 @@ const Counter = ({counterData,counterTitle}) => {
           </h2>
         </div>
 
-        <div className=" p-8 pt-5 lg:p-8  glass-bg custom-counter overflow-hidden lg:py-10">
+        <div className=" p-8 pt-5 lg:p-8  glass-bg custom-counter overflow-hidden lg:py-10 relative">
         <div className="counter-circle"></div>
 
           <div className="flex flex-col md:flex-row  text-center justify-between items-center">

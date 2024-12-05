@@ -191,6 +191,8 @@ function Navbar({ className }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
+        <Link  href="/data-point-software-blogs" className="text-white">Blog</Link>
+        
       </Menu>
     </div>
   );

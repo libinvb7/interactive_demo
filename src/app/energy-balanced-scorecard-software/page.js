@@ -7,7 +7,7 @@ import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import Banner from "@/components/common/Banner";
 import CtaTwo from "@/components/industries/CtaTwo";
-import FormIndustry from "@/components/industries/Form";
+import FormIndustry from "@/components/common/Form/Form";
 import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
 import React from "react";
 import energyData from "../../data/industires/energyData";
@@ -20,7 +20,7 @@ const page = () => {
         title={energyData.bannerData?.title}
         highlightTitle={energyData.bannerData?.HighlightTitle}
         desc={energyData.bannerData?.desc}
-        imageUrl={energyData.bannerData?.Image}
+        imageUrl={energyData.bannerData?.Image} btnView={true}
       />
       <ClientCarousel customClass="mt-20"/>
       <LeftRight mainTitle={energyData.leftRightDataTitles.title} mainData={energyData.leftRightData} desc={energyData.leftRightDataTitles.content}/>

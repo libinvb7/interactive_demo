@@ -54,7 +54,7 @@
       box-shadow: 0 0 32px 0 rgba(17, 90, 145, 0.15);
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
-    position: relative;
+    /* position: relative; */
     z-index: 10;
   }
   .featureContainer{

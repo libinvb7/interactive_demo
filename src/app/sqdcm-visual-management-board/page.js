@@ -4,7 +4,7 @@ import Counter from "@/components/common/counter/Counter";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import CtaTwo from "@/components/industries/CtaTwo";
-import FormIndustry from "@/components/industries/Form";
+import FormIndustry from "@/components/common/Form/Form";
 import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
 import { BackgroundBoxesDemo } from "@/components/solutions/BackgroundBoxesDemo";
 import LearnMore from "@/components/solutions/LearnMore";
@@ -19,7 +19,7 @@ const page = () => {
   return (
     <div className="bg-solutions-home">
       <Banner title={sqdcmData.bannerData?.title}
-        desc={sqdcmData.bannerData?.desc}/>
+        desc={sqdcmData.bannerData?.desc} btnView={true}/>
       <VideoSection customClass="lg:py-20 py-10"  />
       <ClientCarousel />
       <SolutionsCard

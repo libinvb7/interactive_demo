@@ -7,7 +7,7 @@ import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import VideoSection from "@/components/home/video/VideoSection";
 import Banner from "@/components/common/Banner";
 import CtaTwo from "@/components/industries/CtaTwo";
-import FormIndustry from "@/components/industries/Form";
+import FormIndustry from "@/components/common/Form/Form";
 import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
 import React from "react";
 import manufacturingData from "../../data/industires/manufacturingData";
@@ -20,7 +20,7 @@ const page = () => {
         title={manufacturingData.bannerData?.title}
         highlightTitle={manufacturingData.bannerData?.HighlightTitle}
         desc={manufacturingData.bannerData?.desc}
-        imageUrl={manufacturingData.bannerData?.Image}
+        imageUrl={manufacturingData.bannerData?.Image} btnView={true}
       />
       <ClientCarousel customClass="mt-20"/>
       <LeftRight mainTitle={manufacturingData.leftRightDataTitles.title} mainData={manufacturingData.leftRightData} desc={manufacturingData.leftRightDataTitles.content}/>
@@ -30,7 +30,7 @@ const page = () => {
         desc={manufacturingData.StickyScrollContentTitle?.content}
         content={manufacturingData.StickyScrollContent}
       /> */}
-      <VideoSection
+      <VideoSection customClass=" mt-10 lg:mt- 0"
         title="Experience the power of Data Point in action"
         desc="Use Data Point’s advanced Balanced Scorecard to drive Lean practices in electronics manufacturing, streamline operations, and track key KPIs for ongoing improvement and productivity."
       />
