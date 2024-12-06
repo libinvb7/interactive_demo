@@ -1,4 +1,3 @@
-import { NavbarDemo } from "@/components/common/NavbarDemo";
 import { ClientCarousel } from "@/components/home/ClientCarousel";
 import Counter from "@/components/common/counter/Counter";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";

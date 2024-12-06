@@ -8,7 +8,6 @@ import VideoSection from "@/components/home/video/VideoSection";
 import Banner from "@/components/common/Banner";
 import CtaTwo from "@/components/industries/CtaTwo";
 import FormIndustry from "@/components/common/Form/Form";
-import { StickyScrollReveal } from "@/components/industries/StickyScrollReveal";
 import React from "react";
 import electronicsData from "../../data/industires/electronicsData";
 import LeftRight from "@/components/common/LeftRight";

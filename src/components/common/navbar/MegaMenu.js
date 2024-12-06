@@ -129,7 +129,7 @@ const MegaMenu = () => {
                                   key={i}
                                 >
                                   <Link
-                                    href="#"
+                                    href={item.link  || "#"}
                                     className="  block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700"
                                   >
                                     <div className="font-semibold text-sm text-[#003058]">
