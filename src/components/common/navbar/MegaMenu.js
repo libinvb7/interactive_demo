@@ -66,7 +66,7 @@ const MegaMenu = ({ toggleMenu, menu, isOpen, isScrolled }) => {
                                   className={`${section?.customClass}`}
                                   key={i}
                                 >
-                                  <Link
+                                  <Link onClick={() => toggleMenu(null)}
                                     href={item.link || "#"}
                                     className="  block p-3 rounded-lg hover:bg-[#ECF8FD] "
                                   >

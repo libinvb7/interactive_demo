@@ -142,55 +142,26 @@ const Footer = () => {
           </div>
           <div className="  w-full md:w-4/5 ">
             <div className="flex md:px-5 flex-wrap ">
-              <div className=" w-full md:w-1/5">
-                <div className="py-2">
-                  <h3 className="text-white font-bold ">Features</h3>
-                </div>
-                {
-                  footerMenu.map((item , k) => (
-                   <div key={k}>
-                    <h2>{item.title}</h2>
-                    {
-                      item.submenu.map((item,k)=>(
-                        <Link key={k} href={item.link} className="text-white text-sm block py-2">
-                          {item.title}
-                        </Link>
-                      ))
-                    }
-                    </div>
-                  ))
-                }
-                <Link href="/" className="text-white text-sm block py-2">
-                  Interactive Dashboards
-                </Link>
-                <Link href="/" className="text-white text-sm  block py-2">
-                  Keep Track of KPIs
-                </Link>
-                <Link href="/" className="text-white text-sm  block py-2">
-                  Mobility & Global Accessibility
-                </Link>
-                <Link href="/" className="text-white text-sm  block py-2">
-                  Dynamic Report
-                </Link>
-                <Link href="/" className="text-white text-sm  block py-2">
-                  MES & ERP Integration
-                </Link>
-                <Link href="/" className="text-white text-sm  block py-2">
-                  Hoshin Kanri X Matrix
-                </Link>
-                <Link href="/" className="text-white text-sm  block py-2">
-                  SMART KPIS
-                </Link>
-                <Link href="/" className="text-white block py-2 text-sm">
-                  Project Tracker
-                </Link>
-                <Link href="/" className="text-white block py-2 text-sm">
-                  Advanced Features
-                </Link>
-                <Link href="/" className="text-white block py-2 text-sm">
-                  Lean Tools
-                </Link>
-              </div>
+              {
+                footerMenu.map((menu , i)=>(
+                  <div className={` w-full  ${menu.customClass || "md:w-1/5"} `}>
+                  <div className="py-2">
+                    <h3 className="text-white font-bold ">{menu.title}</h3>
+                  </div>
+                  {menu.submenu.map((menuItem,k)=>(
+                    menu.inSideWidth? <div className="flex justify-between w-full flex-wrap ">
+                    <div className="w-full md:w-1/2 lg:pr-3">
+                      <Link key={k} href={menuItem.link} className="text-white text-sm block py-2">
+                    {menuItem.title}
+                  </Link> </div></div> : 
+                    <Link key={k} href={menuItem.link} className="text-white text-sm block py-2">
+                    {menuItem.title}
+                  </Link>
+                  ))}
+                  </div>
+                ))
+              }
+             
               <div className=" w-full md:w-2/5">
                 <div className="py-2">
                   <h3 className="text-white font-bold ">Use Cases</h3>

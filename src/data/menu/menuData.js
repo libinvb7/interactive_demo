@@ -5,7 +5,7 @@ const menu = {
       sections: [
         {
           title: "Features",
-          customClass: "w-full md:w-1/2 ",
+          customClass: " md:w-1/2 ",
           navMenu: [
             {
               title: "Interactive Dashboards",
@@ -77,7 +77,7 @@ const menu = {
         },
         {
           title: "Lean Tools",
-          customClass: "w-full md:w-1/2",
+          customClass: " md:w-1/2",
           navMenu: [
             {
               title: "Quad Chart",

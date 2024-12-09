@@ -42,7 +42,7 @@ const MobileMenu = ({menu, activeMenu,setActiveMenu }) => {
                         <ul className="mt-2">
                           {section.navMenu.map((item, itemIndex) => (
                             <li key={itemIndex}>
-                              <Link
+                              <Link onClick={() => setMobileMenuOpen(false)}
                                 href={item.link || "#"}
                                 className="block text-sm text-[#003058]  py-2"
                               >

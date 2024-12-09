@@ -12,7 +12,7 @@ const VideoSection = ({title,desc,customClass}) => {
           {desc?<p className="text-center mb-10 lg:mb-16">{desc}</p>:""}
           
 
-          <div className="glass-bg p-2 lg:p-5   rounded-lg">
+          <div className="glass-bg p-2 lg:p-10   rounded-lg">
           <StorylaneEmbed/>
 
             {/* <VideoPlayer /> */}
