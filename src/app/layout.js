@@ -1,8 +1,7 @@
 import { Open_Sans } from "next/font/google";
 import "../styles/globals.css";
-import Footer from "@/components/common/Footer";
-import MegaMenu from "@/components/common/navbar/MegaMenu";
-import MobileMenu from "@/components/common/navbar/MobileMenu";
+import Footer from "@/components/common/Footer/Footer";
+import Navbar from "@/components/common/navbar/Navbar";
 
 export const metadata = {
   title: "Balance Scorecard",
@@ -17,8 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`overflow-x-hidden ${openSans.className} antialiased`}>
-        <MegaMenu />
-        {/* <MobileMenu /> */}
+        <Navbar />
         <main>{children}</main>
         <Footer />
       </body>

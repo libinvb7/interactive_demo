@@ -8,7 +8,7 @@ import VideoSection from "@/components/home/video/VideoSection";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import TemplateSection from "@/components/home/TemplateSection";
 import Cta from "@/components/home/Cta";
-import Footer from "@/components/common/Footer";
+import Footer from "@/components/common/Footer/Footer";
 import BlogListing from "@/components/common/Blog/BlogListingHome";
 import Slider from "@/components/common/slider/Slider";
 

@@ -27,7 +27,7 @@ const Accordion = ({ items }) => {
             {index === activeIndex ? (
               <BsArrowUpCircle className=" md:text-xl lg:text-4xl  text-[#115991] duration-300" />
             ) : (
-              <BsArrowDownCircle className="md:text-xl lg:text-4xl text-[#115991] duration-300" />
+              <BsArrowUpCircle className=" md:text-xl lg:text-4xl  text-[#115991] duration-300 rotate-180" />
             )}
           </div>
           <div

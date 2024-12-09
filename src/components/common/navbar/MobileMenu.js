@@ -1,77 +1,42 @@
-"use client"
-import { useState } from "react";
-import Link from "next/link";
-import menu from "../../../data/menu/menu";
+import Link from 'next/link'
+import React from 'react'
+import { FiPlus } from "react-icons/fi";
 
 
-const MobileMenu = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeMenu, setActiveMenu] = useState(null);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen((prev) => !prev);
-  };
-
+const MobileMenu = ({menu, activeMenu,setActiveMenu }) => {
   const toggleSubMenu = (menuName) => {
     setActiveMenu((prev) => (prev === menuName ? null : menuName));
   };
-
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow block lg:hidden">
-      {/* Header */}
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <div className="text-lg font-semibold text-gray-900 dark:text-white">
-            <Link href="/">MyBrand</Link>
-          </div>
-
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMobileMenu}
-            className=" p-2 text-gray-500 dark:text-gray-300"
-            aria-label="Toggle Mobile Menu"
-          >
-            {isMobileMenuOpen ? (
-              <span>&#x2715;</span>
-            ) : (
-              <span>&#9776;</span> 
-            )}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className=" bg-white dark:bg-gray-800 shadow-lg">
+    
+    <div className=" bg-white dark:bg-gray-800 shadow-lg lg:hidden">
           <ul className="p-4 space-y-4">
             {menu.navItems.map((menuItem, index) => (
               <li key={index}>
-                {
-                    menuItem.mainLink ? <Link href={menuItem.mainLink || ""}>
+                {menuItem.mainLink ? (
+                  <Link href={menuItem.mainLink || ""}>
                     <button
                       onClick={() => toggleSubMenu(menuItem.name)}
-                      className="flex justify-between items-center w-full text-left p-2 text-gray-700 dark:text-gray-200"
+                      className="flex justify-between items-center w-full text-left p-2 text-[#003058]   dark:text-gray-200"
                     >
                       {menuItem.name}
                     </button>
-                    </Link>  : 
-                <button
-                  onClick={() => toggleSubMenu(menuItem.name)}
-                  className="flex justify-between items-center w-full text-left p-2 text-gray-700 dark:text-gray-200"
-                >
-                  {menuItem.name}
-                  <span>{activeMenu === menuItem.name ? "-" : "+"}</span>
-                </button>
-                
-                }
-                
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => toggleSubMenu(menuItem.name)}
+                    className="flex justify-between items-center w-full text-left p-2 text-[#003058]   dark:text-gray-200"
+                  >
+                    {menuItem.name}
+                    <span>{activeMenu === menuItem.name ? <FiPlus className='rotate-45 text-lg transition-all'/> :  <FiPlus className=' text-lg transition-all'/>}</span>
+                  </button>
+                )}
+
                 {activeMenu === menuItem.name && menuItem.sections && (
-                  <div className="pl-4 mt-2 space-y-2">
+                  <div className="pl-2 mt-2 space-y-2 transition-all">
                     {menuItem.sections.map((section, sectionIndex) => (
                       <div key={sectionIndex}>
-                        <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-300">
+                        <h3 className="text-primary text-left  text-base uppercase">
                           {section.title}
                         </h3>
                         <ul className="mt-2">
@@ -79,7 +44,7 @@ const MobileMenu = () => {
                             <li key={itemIndex}>
                               <Link
                                 href={item.link || "#"}
-                                className="block text-sm text-gray-600 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white"
+                                className="block text-sm text-[#003058]  py-2"
                               >
                                 {item.title}
                               </Link>
@@ -94,9 +59,7 @@ const MobileMenu = () => {
             ))}
           </ul>
         </div>
-      )}
-    </nav>
-  );
-};
+  )
+}
 
-export default MobileMenu;
+export default MobileMenu

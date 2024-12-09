@@ -10,7 +10,7 @@ const LearnMoreCard = ({ data }) => {
       <Image
         src="/assets/images/icons/info.png"
         className="bg-white p-2 rounded-2xl group-hover:rounded-full transition-[border-radius] duration-300 ease-in"
-        alt="card icon"  width={60}  height={60}
+        alt="card icon"  width={70}  height={70}
       />
     </div>
     <div className="w-[100%] text-left">

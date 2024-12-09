@@ -5,7 +5,7 @@ const menu = {
       sections: [
         {
           title: "Features",
-          customClass:"w-full md:w-1/2 ",
+          customClass: "w-full md:w-1/2 ",
           navMenu: [
             {
               title: "Interactive Dashboards",
@@ -46,7 +46,7 @@ const menu = {
         },
         {
           title: "Advanced Features",
-          customClass:"",
+          customClass: "",
           navMenu: [
             {
               title: "Takt Time Calculation",
@@ -77,7 +77,7 @@ const menu = {
         },
         {
           title: "Lean Tools",
-          customClass:"w-full md:w-1/2",
+          customClass: "w-full md:w-1/2",
           navMenu: [
             {
               title: "Quad Chart",
@@ -118,15 +118,15 @@ const menu = {
       ],
     },
     {
-        name: "Pricing",
-        mainLink: "/pricing"
+      name: "Pricing",
+      mainLink: "#",
     },
     {
-        name: "Solutions",
+      name: "Solutions",
       sections: [
         {
           title: "Use Cases ",
-          customClass:"w-full md:w-1/2",
+          customClass: "w-full md:w-1/2",
           navMenu: [
             {
               title: "Strategic Planning",
@@ -217,7 +217,7 @@ const menu = {
         },
         {
           title: "Frameworks",
-          customClass:"w-full md:w-1/2",
+          customClass: "w-full md:w-1/2",
           navMenu: [
             {
               title: "SQCDP ",
@@ -276,14 +276,14 @@ const menu = {
             },
           ],
         },
-      ]
+      ],
     },
     {
-        name: "Industries",
+      name: "Industries",
       sections: [
         {
           title: "Industries",
-          customClass:"w-full md:w-1/3",
+          customClass: "w-full md:w-1/3",
 
           navMenu: [
             {
@@ -321,17 +321,16 @@ const menu = {
               desc: "Balanced Scorecard Software | Track and Monitor KPIs",
               link: "/bank-balanced-scorecard-board",
             },
-            
           ],
         },
-      ]
+      ],
     },
     {
-        name: "Resource",
+      name: "Resource",
       sections: [
         {
           title: "Why Data Point?",
-          customClass:"w-full md:w-1/3",
+          customClass: "w-full md:w-1/2",
           navMenu: [
             {
               title: "Blogs  ",
@@ -352,7 +351,7 @@ const menu = {
         },
         {
           title: "Templates",
-          customClass:"w-full md:w-1/3",
+          customClass: "w-full md:w-1/2",
           navMenu: [
             {
               title: "Demo Videos",
@@ -371,14 +370,14 @@ const menu = {
             },
           ],
         },
-      ]
+      ],
     },
     {
-        name: "Support",
+      name: "Support",
       sections: [
         {
           title: "",
-          customClass:"w-full md:w-1/2",
+          customClass: "w-full md:w-1/2",
 
           navMenu: [
             {
@@ -391,13 +390,10 @@ const menu = {
               desc: "Digital Balanced Scorecard Software | Easy MES, ERP Integration",
               link: "",
             },
-            
-            
           ],
         },
-      ]
+      ],
     },
-   
   ],
 };
 
